@@ -655,7 +655,7 @@
 							<align>center</align>
 							<textcolor>grey</textcolor>
 							<font>font_skinversion</font>
-							<label>$INFO[System.AddonVersion(skin.aeon.nox.silvo),v,]</label>
+							<label>$INFO[System.AddonVersion(Kall-Ice),v,]</label>
 						</control>
 						<control type="group" id="7900">
 							<height>148</height>
