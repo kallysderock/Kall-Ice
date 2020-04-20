@@ -1,7 +1,7 @@
 # Kodi Media Center language file
-# Addon Name: Aeon Nox: SiLVO
-# Addon id: skin.aeon.nox.silvo
-# Addon Provider: SiLVO
+# Addon Name: Kall-Ice: Kallysderock
+# Addon id: Kall-Ice
+# Addon Provider: Kallysderock
 msgid ""
 msgstr ""
 "Project-Id-Version: KODI Skins\n"
