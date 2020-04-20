@@ -1,0 +1,2111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<includes>
+	<include name="skinshortcuts-mainmenu">
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<label>KallPlay</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb />
+			<property name="background">special://home/userdata/Backgrounds/Movies/</property>
+			<property name="backgroundName">special://home/userdata/Backgrounds/Movies/</property>
+			<property name="widgetType">videos</property>
+			<property name="widgetStyle">Compact Panel</property>
+			<property name="widgetCase">Glass</property>
+			<property name="widgetBack">Clear White</property>
+			<property name="widgetHide">true</property>
+			<property name="widgetDisableFanart">true</property>
+			<property name="widgetStyle.2">Panel</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.kallplay",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.kallplay",return)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">plugin-video-kallplay</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<label>$LOCALIZE[342]</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultMovies.png</icon>
+			<thumb />
+			<property name="widgetCase">Glass</property>
+			<property name="widgetBack">Clear White</property>
+			<property name="widgetHide">true</property>
+			<property name="background">special://home/userdata/Backgrounds/Movies/</property>
+			<property name="backgroundName">special://home/userdata/Backgrounds/Movies/</property>
+			<property name="widgetStyle">Compact Panel</property>
+			<property name="widgetDisableFanart">true</property>
+			<property name="widgetType">movies</property>
+			<property name="widgetStyle.2">Panel</property>
+			<onclick>RunScript(script.extendedinfo,info=allmovies)</onclick>
+			<property name="path">RunScript(script.extendedinfo,info=allmovies)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">movies</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<label>Series</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cbrett%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.wraith%2fresources%2fskins%2fDefault%2fmedia%2ftm.png/</thumb>
+			<property name="background">special://home/userdata/Backgrounds/Tv Shows/</property>
+			<property name="backgroundName">special://home/userdata/Backgrounds/Tv Shows/</property>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://script.wraith?info=alltvshows",return)</property>
+			<property name="widgetCase">Glass</property>
+			<property name="widgetBack">Clear White</property>
+			<property name="widgetHide">true</property>
+			<property name="widgetStyle">Compact Panel</property>
+			<property name="widgetDisableFanart">true</property>
+			<property name="widgetType">videos</property>
+			<property name="widgetStyle.2">Panel</property>
+			<onclick>ActivateWindow(Videos,"plugin://script.extendedinfo?info=popularmovies",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://script.extendedinfo?info=popularmovies",return)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">series</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<label>Desenhos</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddonPVRClient.png</icon>
+			<thumb />
+			<property name="background">special://home/userdata/Backgrounds/kids/</property>
+			<property name="backgroundName">special://home/userdata/Backgrounds/kids/</property>
+			<property name="widgetType">videos</property>
+			<property name="widgetStyle">Compact Panel</property>
+			<property name="widgetCase">Glass</property>
+			<property name="widgetBack">Colored Clear White</property>
+			<property name="widgetHide">true</property>
+			<property name="widgetDisableFanart">true</property>
+			<property name="widgetStyle.2">Panel</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=kidstube",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=kidstube",return)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">desenhos</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<label>Musicas</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cbrett%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.jukeboxhero%5cicon.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.jukeboxhero",return)</property>
+			<property name="background">special://home/userdata/Backgrounds/music/</property>
+			<property name="backgroundName">special://home/userdata/Backgrounds/music/</property>
+			<property name="widgetStyle">Compact Panel</property>
+			<property name="widgetCase">Glass</property>
+			<property name="widgetBack">Clear White</property>
+			<property name="widgetHide">true</property>
+			<property name="widgetDisableFanart">true</property>
+			<property name="widgetType">videos</property>
+			<property name="widgetStyle.2">Panel</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.Maverick/?mode=get_list&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2FFloyd6969%2FDJV%2Fmaster%2FNew%2520Mav%2520Jukebox-k5aKZH5L.txt&amp;name=%5BCOLOR+FFffffffff%5D%5BCOLORlime%5D%5BB%5DThe+Jukebox%5B%2FB%5D%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FhzBz7Wk.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FIGcg7tE.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.Maverick/?mode=get_list&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2FFloyd6969%2FDJV%2Fmaster%2FNew%2520Mav%2520Jukebox-k5aKZH5L.txt&amp;name=%5BCOLOR+FFffffffff%5D%5BCOLORlime%5D%5BB%5DThe+Jukebox%5B%2FB%5D%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FhzBz7Wk.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FIGcg7tE.jpg&amp;description=No+information+available",return)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">musicas</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
+			<label>Favoritos</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/Favorites.png</icon>
+			<thumb />
+			<property name="background">special://home/userdata/Backgrounds/favourties/</property>
+			<property name="backgroundName">special://home/userdata/Backgrounds/favourties/</property>
+			<property name="widgetType">movies</property>
+			<property name="widgetStyle">Compact Panel</property>
+			<property name="widgetDisableFanart">true</property>
+			<property name="widgetHide">true</property>
+			<property name="widgetCase">Glass</property>
+			<property name="widgetBack">Clear White</property>
+			<property name="widgetType.2">custom</property>
+			<property name="widgetStyle.2">Compact Panel</property>
+			<property name="widgetBack.2">Colored Clear White</property>
+			<property name="widgetHide.2">true</property>
+			<property name="widgetDisableFanart.2">true</property>
+			<property name="widgetCase.2">Glass</property>
+			<onclick>ActivateWindow(Favourites)</onclick>
+			<property name="path">ActivateWindow(Favourites)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">favoritos</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
+			<label>Relaxar</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://http%3a%2f%2fsteptoesplace.net%2fmainmenu%2fchillout.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.monstermunch/?url=http%3A%2F%2Fsteptoesplace.net%2Fserver%2Frelax.xml&amp;mode=1&amp;name=%5BCOLOR+blue%5D%5BB%5D%2A%2ACHILL+OUT%2A%2A%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=http%3A%2F%2Fsteptoesplace.net%2Fpics%2Fmonster-munch-300x300.png",return)</property>
+			<property name="background">special://home/userdata/Backgrounds/chill zone/</property>
+			<property name="backgroundName">special://home/userdata/Backgrounds/chill zone/</property>
+			<property name="widgetStyle.2">Compact Panel</property>
+			<property name="widgetBack.2">Clear</property>
+			<property name="widgetHide.2">true</property>
+			<property name="widgetDisableFanart.2">true</property>
+			<property name="widgetCase.2">Glass</property>
+			<property name="widgetType">movies</property>
+			<property name="widgetStyle">Compact Panel</property>
+			<property name="widgetBack">Clear White</property>
+			<property name="widgetHide">true</property>
+			<property name="widgetDisableFanart">true</property>
+			<property name="widgetCase">Glass</property>
+			<property name="widgetType.2">weather</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.enigma/?mode=get_list&amp;url=http%3A%2F%2Felekta.info%2Fenigma2%2Fambient.xml&amp;name=%5BCOLORblue%5D%E2%80%A2+%5B%2FCOLOR%5D%5BCOLORlightgrey%5DA%5B%2FCOLOR%5D%5BCOLORlightgrey%5Dmbient%5B%2FCOLOR%5D&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.enigma%2Fimages%2Fen1.gif&amp;fanart=C%3A%5CUsers%5Cgrish%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.enigma%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.enigma/?mode=get_list&amp;url=http%3A%2F%2Felekta.info%2Fenigma2%2Fambient.xml&amp;name=%5BCOLORblue%5D%E2%80%A2+%5B%2FCOLOR%5D%5BCOLORlightgrey%5DA%5B%2FCOLOR%5D%5BCOLORlightgrey%5Dmbient%5B%2FCOLOR%5D&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.enigma%2Fimages%2Fen1.gif&amp;fanart=C%3A%5CUsers%5Cgrish%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.enigma%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">relaxar</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
+			<label>Esportes</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cbrett%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SportsDevil%5cicon.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.SportsDevil",return)</property>
+			<property name="background">special://home/userdata/Backgrounds/sports/</property>
+			<property name="backgroundName">special://home/userdata/Backgrounds/sports/</property>
+			<property name="widgetStyle.2">Compact Panel</property>
+			<property name="widgetBack.2">Clear White</property>
+			<property name="widgetHide.2">true</property>
+			<property name="widgetDisableFanart.2">true</property>
+			<property name="widgetType">videos</property>
+			<property name="widgetCase">Glass</property>
+			<property name="widgetBack">Clear White</property>
+			<property name="widgetDisableFanart">true</property>
+			<property name="widgetHide">true</property>
+			<property name="widgetStyle">Compact Panel</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.SportsDevil",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.SportsDevil",return)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">plugin-video-sportsdevil</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
+			<label>$LOCALIZE[13000]</label>
+			<label2 />
+			<icon>special://skin/extras/icons/DefaultAddonService.png</icon>
+			<thumb />
+			<property name="background">special://home/userdata/Backgrounds/lg_31762551_IMG_2854.jpg</property>
+			<property name="backgroundName">special://home/userdata/Backgrounds/lg_31762551_IMG_2854.jpg</property>
+			<property name="widgetStyle">Compact Panel</property>
+			<property name="widgetBack">Clear White</property>
+			<property name="widgetDisableFanart">true</property>
+			<property name="widgetHide">true</property>
+			<property name="widgetCase">Glass</property>
+			<property name="widgetType">program</property>
+			<property name="widgetStyle.2">Panel</property>
+			<onclick>ActivateWindow(Settings)</onclick>
+			<property name="path">ActivateWindow(Settings)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">num-13000</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
+			<label>$LOCALIZE[33060]</label>
+			<label2 />
+			<icon>special://skin/extras/icons/power.png</icon>
+			<thumb />
+			<property name="background">special://home/userdata/Backgrounds/1.jpg</property>
+			<property name="backgroundName">special://home/userdata/Backgrounds/1.jpg</property>
+			<property name="widgetStyle">Panel</property>
+			<property name="widgetStyle.2">Panel</property>
+			<onclick>ActivateWindow(shutdownmenu)</onclick>
+			<property name="path">ActivateWindow(shutdownmenu)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="submenuVisibility">num-33060</property>
+			<property name="hasSubmenu">True</property>
+		</item>
+	</include>
+	<include />
+	<include name="skinshortcuts-submenu">
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">1</property>
+			<label>[COLOR cyan][B]FAUSTINO TV[/B][/COLOR]</label>
+			<label2>Add-on de Vídeo</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://https%3a%2f%2fimgur.com%2fCIpu0DP.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FF&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+cyan%5D%5BB%5DFAUSTINO+TV%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FF&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+cyan%5D%5BB%5DFAUSTINO+TV%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FF&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+cyan%5D%5BB%5DFAUSTINO+TV%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-kallplay)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">1</property>
+			<label>[COLOR White][B]BRAZUCA PLAY[/B][/COLOR]</label>
+			<label2>Add-on de Vídeo</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://https%3a%2f%2fimgur.com%2fCIpu0DP.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FBRAZ&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D+%5BCOLOR+White%5D%5BB%5DBRAZUCA+PLAY%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FBRAZ&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D+%5BCOLOR+White%5D%5BB%5DBRAZUCA+PLAY%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FBRAZ&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D+%5BCOLOR+White%5D%5BB%5DBRAZUCA+PLAY%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-kallplay)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">1</property>
+			<label>[COLOR White][B]ALADO TV[/B][/COLOR]</label>
+			<label2>Add-on de Vídeo</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://https%3a%2f%2fimgur.com%2fCIpu0DP.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fpastebin.com%2Fraw%2Fru3GpKWJ&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DALADO+TV%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fpastebin.com%2Fraw%2Fru3GpKWJ&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DALADO+TV%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fpastebin.com%2Fraw%2Fru3GpKWJ&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DALADO+TV%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-kallplay)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">1</property>
+			<label>[COLOR blue][B]FORMIGA[/B][/COLOR][COLOR White][B]TV[/B][/COLOR]</label>
+			<label2>Add-on de Vídeo</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://https%3a%2f%2fimgur.com%2fCIpu0DP.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fpastebin.com%2Fraw%2F4b1U0Ykw&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+blue%5D%5BB%5DFORMIGA%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DTV%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fpastebin.com%2Fraw%2F4b1U0Ykw&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+blue%5D%5BB%5DFORMIGA%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DTV%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fpastebin.com%2Fraw%2F4b1U0Ykw&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+blue%5D%5BB%5DFORMIGA%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DTV%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-kallplay)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">1</property>
+			<label>[COLOR cyan][B]--VIDA--[/B][/COLOR]</label>
+			<label2>Add-on de Vídeo</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://https%3a%2f%2fimgur.com%2fCIpu0DP.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FVID&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+cyan%5D%5BB%5D--VIDA--%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FVID&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+cyan%5D%5BB%5D--VIDA--%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FVID&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+cyan%5D%5BB%5D--VIDA--%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-kallplay)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
+			<property name="mainmenuid">1</property>
+			<label>[COLOR blue][B]NORDEST[/B][/COLOR][COLOR White][B]TV[/B][/COLOR]</label>
+			<label2>Add-on de Vídeo</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://https%3a%2f%2fimgur.com%2fCIpu0DP.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FNORD&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+blue%5D%5BB%5DNORDEST%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DTV%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FNORD&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+blue%5D%5BB%5DNORDEST%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DTV%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FNORD&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+blue%5D%5BB%5DNORDEST%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DTV%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-kallplay)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
+			<property name="mainmenuid">1</property>
+			<label>[COLOR White][B]BR[/B][/COLOR][COLOR red][B]LIVE[/B][/COLOR]</label>
+			<label2>Add-on de Vídeo</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://https%3a%2f%2fimgur.com%2fCIpu0DP.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FBRL&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DBR%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+red%5D%5BB%5DLIVE%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FBRL&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DBR%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+red%5D%5BB%5DLIVE%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FBRL&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DBR%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+red%5D%5BB%5DLIVE%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-kallplay)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
+			<property name="mainmenuid">1</property>
+			<label>[COLOR beige]CONE[B][COLOR violet][B]X[/B][COLOR beige][B]ÃO[/COLOR][COLOR magenta] PLAY[/COLOR][/B]</label>
+			<label2>Add-on de Vídeo</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://https%3a%2f%2fimgur.com%2fCIpu0DP.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FCONE&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BB%5D%5BCOLOR+beige%5DCONE%5BB%5D%5BCOLOR+violet%5D%5BB%5DX%5B%2FB%5D%5BCOLOR+beige%5D%5BB%5D%C3%83O%5B%2FCOLOR%5D%5BCOLOR+magenta%5D+PLAY%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FCONE&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BB%5D%5BCOLOR+beige%5DCONE%5BB%5D%5BCOLOR+violet%5D%5BB%5DX%5B%2FB%5D%5BCOLOR+beige%5D%5BB%5D%C3%83O%5B%2FCOLOR%5D%5BCOLOR+magenta%5D+PLAY%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fraw.githubusercontent.com%2Fkallysderock%2FKallPlay-repo%2Fmaster%2FCanais%2FCONE&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BB%5D%5BCOLOR+beige%5DCONE%5BB%5D%5BCOLOR+violet%5D%5BB%5DX%5B%2FB%5D%5BCOLOR+beige%5D%5BB%5D%C3%83O%5B%2FCOLOR%5D%5BCOLOR+magenta%5D+PLAY%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-kallplay)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
+			<property name="mainmenuid">1</property>
+			<label>[B][COLOR White]WOLF[B] [COLOR][COLOR White]TV[/COLOR][/B]</label>
+			<label2>Add-on de Vídeo</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://https%3a%2f%2fimgur.com%2fCIpu0DP.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fpastebin.com%2Fraw%2FjPZanm5s&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BB%5D%5BCOLOR+White%5DWOLF%5BB%5D+%5BCOLOR%5D%5BCOLOR+White%5DTV%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fpastebin.com%2Fraw%2FjPZanm5s&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BB%5D%5BCOLOR+White%5DWOLF%5BB%5D+%5BCOLOR%5D%5BCOLOR+White%5DTV%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fpastebin.com%2Fraw%2FjPZanm5s&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BB%5D%5BCOLOR+White%5DWOLF%5BB%5D+%5BCOLOR%5D%5BCOLOR+White%5DTV%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-kallplay)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="10">
+			<property name="id">$NUMBER[10]</property>
+			<property name="mainmenuid">1</property>
+			<label>[B][COLOR orange]ZEUS[B] [COLOR][COLOR White]TV[/COLOR][/B]</label>
+			<label2>Add-on de Vídeo</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://https%3a%2f%2fimgur.com%2fCIpu0DP.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fpastebin.com%2Fraw%2FXCGdehxa&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BB%5D%5BCOLOR+orange%5DZEUS%5BB%5D+%5BCOLOR%5D%5BCOLOR+White%5DTV%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fpastebin.com%2Fraw%2FXCGdehxa&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BB%5D%5BCOLOR+orange%5DZEUS%5BB%5D+%5BCOLOR%5D%5BCOLOR+White%5DTV%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.kallplay/?url=https%3A%2F%2Fpastebin.com%2Fraw%2FXCGdehxa&amp;mode=1&amp;name=%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BCOLOR+White%5D%5BB%5DKALL%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%5BB%5DPLAY%5B%2FB%5D%5B%2FCOLOR%5D%5BCOLOR+gold%5D%7C%5B%2FCOLOR%5D%5BB%5D%5BCOLOR+orange%5DZEUS%5BB%5D+%5BCOLOR%5D%5BCOLOR+White%5DTV%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=https%3A%2F%2Fimgur.com%2F7hf1Lxe.jpg",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-kallplay)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">2</property>
+			<label>My Movies</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cChinaCat%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.atreides.artwork%5cresources%5cmedia%5catreides%5cmymovies.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=mymovieNavigator",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://script.extendedinfo?info=libraryallmovies",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://script.extendedinfo?info=libraryallmovies",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">2</property>
+			<label>Popular movies </label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cbrett%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.wraith%2fresources%2fskins%2fDefault%2fmedia%2ftm.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://script.wraith?info=popularmovies",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=movies&amp;url=popular",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=movies&amp;url=popular",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">2</property>
+			<label>Top rated movies </label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cbrett%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.wraith%2fresources%2fskins%2fDefault%2fmedia%2ftm.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://script.wraith?info=topratedmovies",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=movies&amp;url=views",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=movies&amp;url=views",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">2</property>
+			<label>People Watching</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cChinaCat%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.atreides.artwork%5cresources%5cmedia%5catreides%5cpeople-watching.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=movies&amp;url=trending",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=movies&amp;url=trending",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=movies&amp;url=trending",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">2</property>
+			<label>Boxsets</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cChinaCat%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.atreides.artwork%5cresources%5cmedia%5catreides%5cboxsets.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=boxsetNavigator",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.marauder/?action=boxsetNavigator",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.marauder/?action=boxsetNavigator",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">3</property>
+			<label>$LOCALIZE[4]</label>
+			<label2 />
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb />
+			<visible>[System.HasAddon(script.tv.show.next.aired)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),series)</visible>
+			<onclick>RunAddon(script.tv.show.next.aired,return)</onclick>
+			<property name="path">RunAddon(script.tv.show.next.aired,return)</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">3</property>
+			<label>My TV Shows</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cChinaCat%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.atreides.artwork%5cresources%5cmedia%5catreides%5cmytvshows.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=mytvNavigator",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://script.extendedinfo?info=libraryalltvshows",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://script.extendedinfo?info=libraryalltvshows",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),series)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">3</property>
+			<label>Airing Today </label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cbrett%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.wraith%2fresources%2fskins%2fDefault%2fmedia%2ftm.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://script.wraith?info=airingtodaytvshows",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvshows&amp;url=airing",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvshows&amp;url=airing",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),series)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">3</property>
+			<label>Top rated TV shows </label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cbrett%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.wraith%2fresources%2fskins%2fDefault%2fmedia%2ftm.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://script.wraith?info=topratedtvshows",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvshows&amp;url=rating",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvshows&amp;url=rating",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),series)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">3</property>
+			<label>People Watching</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cChinaCat%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.atreides.artwork%5cresources%5cmedia%5catreides%5cpeople-watching.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvshows&amp;url=trending",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvshows&amp;url=trending",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvshows&amp;url=trending",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),series)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
+			<property name="mainmenuid">3</property>
+			<label>Tv Box Sets</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://http%3a%2f%2fmavericktv.net%2fdata%2ficons%2fboxsets.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.MaverickTV/?url=http%3A%2F%2Fmavericktv.net%2Fdata%2Fseries%2Fseries.xml&amp;mode=1&amp;name=%5BCOLOR+lime%5D%5BB%5DMaverick+TV+Boxsets%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fmavericktv.net%2Fdata%2Ficons%2Fboxsets.jpg&amp;fanart=http%3A%2F%2Fwallpapercave.com%2Fwp%2F4Kh9Gm1.jpg",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.MaverickTV/?url=http%3A%2F%2Fmavericktv.net%2Fdata%2Fseries%2Fseries.xml&amp;mode=1&amp;name=%5BCOLOR+lime%5D%5BB%5DMaverick+TV+Boxsets%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fmavericktv.net%2Fdata%2Ficons%2Fboxsets.jpg&amp;fanart=http%3A%2F%2Fwallpapercave.com%2Fwp%2F4Kh9Gm1.jpg",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.MaverickTV/?url=http%3A%2F%2Fmavericktv.net%2Fdata%2Fseries%2Fseries.xml&amp;mode=1&amp;name=%5BCOLOR+lime%5D%5BB%5DMaverick+TV+Boxsets%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fmavericktv.net%2Fdata%2Ficons%2Fboxsets.jpg&amp;fanart=http%3A%2F%2Fwallpapercave.com%2Fwp%2F4Kh9Gm1.jpg",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),series)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">4</property>
+			<label>Family Movies</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cChinaCat%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.supremacy%5cicon.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.supremacy/?action=directory&amp;url=http%3A%2F%2Fstephen-builds.uk%2Fsupremacy%2520changeing%2FKid%27s%2520movies.xml&amp;content=movies",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=movies&amp;url=https%3A%2F%2Fwww.imdb.com%2Fsearch%2Ftitle%3Ftitle_type%3Dfeature%2Ctv_movie%2Cdocumentary%26num_votes%3D100%2C%26release_date%3D%2Cdate%5B0%5D%26genres%3Dfamily%26sort%3Dmoviemeter%2Casc%26count%3D40%26start%3D1",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=movies&amp;url=https%3A%2F%2Fwww.imdb.com%2Fsearch%2Ftitle%3Ftitle_type%3Dfeature%2Ctv_movie%2Cdocumentary%26num_votes%3D100%2C%26release_date%3D%2Cdate%5B0%5D%26genres%3Dfamily%26sort%3Dmoviemeter%2Casc%26count%3D40%26start%3D1",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),desenhos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">4</property>
+			<label>DIGIBOX</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://special%3a%2f%2fhome%2faddons%2fplugin.video.digibox%2fresources%2fmedia%2fkids.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.digibox/?mode=get_list&amp;url=file%3A%2F%2Fkids.xml&amp;name=%5BCOLOR+FFffffffff%5DKids%5B%2FCOLOR%5D&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.digibox%2Fresources%2Fmedia%2Fkids.png&amp;fanart=C%3A%5CUsers%5CChinaCat%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.digibox%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.digibox/?mode=get_list&amp;url=file%3A%2F%2Fkids.xml&amp;name=%5BCOLOR+FFffffffff%5DKids%5B%2FCOLOR%5D&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.digibox%2Fresources%2Fmedia%2Fkids.png&amp;fanart=C%3A%5CUsers%5CChinaCat%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.digibox%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.digibox/?mode=get_list&amp;url=file%3A%2F%2Fkids.xml&amp;name=%5BCOLOR+FFffffffff%5DKids%5B%2FCOLOR%5D&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.digibox%2Fresources%2Fmedia%2Fkids.png&amp;fanart=C%3A%5CUsers%5CChinaCat%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.digibox%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),desenhos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">4</property>
+			<label>PLAYGROUND</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://http%3a%2f%2ftheunjudged.com%2fUnjudged%2fImages%2fMain%2fKids.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.theunjudged/?mode=get_list&amp;url=http%3A%2F%2Ftheunjudged.com%2FUnjudged%2FAdd-on%2FKids%2FKids.xml&amp;name=%5BB%5D%5BCOLOR+white%5DKids%5B%2FCOLOR%5D%5B%2FB%5D&amp;iconimage=http%3A%2F%2Ftheunjudged.com%2FUnjudged%2FImages%2FMain%2FKids.png&amp;fanart=C%3A%5CUsers%5Cbrett%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.theunjudged%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fmagnetic.website%2Fplayground%2Fmain.xml&amp;name=%5BCOLOR+gold%5D%5BB%5DW%5BCOLOR%5DO%5B%2FCOLOR%5DW+The+Playground%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fmagnetic.website%2Fplayground%2Ficon.png&amp;fanart=http%3A%2F%2Fmagnetic.website%2Fplayground%2Ffanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fmagnetic.website%2Fplayground%2Fmain.xml&amp;name=%5BCOLOR+gold%5D%5BB%5DW%5BCOLOR%5DO%5B%2FCOLOR%5DW+The+Playground%5B%2FB%5D%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fmagnetic.website%2Fplayground%2Ficon.png&amp;fanart=http%3A%2F%2Fmagnetic.website%2Fplayground%2Ffanart.jpg&amp;description=No+information+available",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),desenhos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">4</property>
+			<label>Crew Kids</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cgrish%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.thecrew.artwork%5cresources%5cmedia%5cthecrew%5cmain_greyhat.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=greyhat",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=greyhat",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=greyhat",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),desenhos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">4</property>
+			<label>Klassic Tv Shows</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://http%3a%2f%2fmavericktv.net%2fdata%2ficons%2fklassic.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.SkyNet/?url=http%3A%2F%2Fmavericktv.net%2Fdata%2Flivetv%2Fkidstv.xml&amp;mode=1&amp;name=%5BCOLOR+lime%5D%5BB%5DKlassic+Kids+TV%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=https%3A%2F%2Fi.imgur.com%2FfiRGzIM.jpg",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.Maverick/?mode=get_list&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2FFloyd6969%2FDJV%2Fmaster%2Fnewmavkidstv.txt&amp;name=%5BCOLOR+FFffffffff%5D%5BCOLORlime%5D%5BB%5DKlassic+Kids+TV%5B%2FB%5D%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FhzBz7Wk.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FIGcg7tE.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.Maverick/?mode=get_list&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2FFloyd6969%2FDJV%2Fmaster%2Fnewmavkidstv.txt&amp;name=%5BCOLOR+FFffffffff%5D%5BCOLORlime%5D%5BB%5DKlassic+Kids+TV%5B%2FB%5D%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FhzBz7Wk.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FIGcg7tE.jpg&amp;description=No+information+available",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),desenhos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">5</property>
+			<label>SG MUSIC BOX</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cgrish%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.SGMUSICBOX%5cicon.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.SGMUSICBOX",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.SGMUSICBOX",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.SGMUSICBOX",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),musicas)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">5</property>
+			<label>$LOCALIZE[134]</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb />
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.enigma/?mode=lastfm&amp;url=chart%2Ftracks&amp;name=%5BCOLOR+aquamarine%5D%E2%80%A2+%5B%2FCOLOR%5D%5BCOLORaquamarine%5DTrack%5B%2FCOLOR%5D%5BCOLORlightgrey%5D+Chart%5B%2FCOLOR%5D&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.enigma%2Fimages%2Fm.gif&amp;fanart=C%3A%5CUsers%5Cgrish%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.enigma%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.enigma/?mode=lastfm&amp;url=chart%2Ftracks&amp;name=%5BCOLOR+aquamarine%5D%E2%80%A2+%5B%2FCOLOR%5D%5BCOLORaquamarine%5DTrack%5B%2FCOLOR%5D%5BCOLORlightgrey%5D+Chart%5B%2FCOLOR%5D&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.enigma%2Fimages%2Fm.gif&amp;fanart=C%3A%5CUsers%5Cgrish%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.enigma%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),musicas)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">5</property>
+			<label>Artists</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://special%3a%2f%2fhome%2faddons%2fplugin.video.enigma%2fimages%2fm.gif/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.enigma/?mode=lastfm&amp;url=chart%2Fartists&amp;name=%5BCOLOR+aquamarine%5D%E2%80%A2+%5B%2FCOLOR%5D%5BCOLORaquamarine%5DArtist%5BCOLORlightgrey%5D+Chart%5B%2FCOLOR%5D&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.enigma%2Fimages%2Fm.gif&amp;fanart=C%3A%5CUsers%5Cgrish%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.enigma%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.enigma/?mode=lastfm&amp;url=chart%2Fartists&amp;name=%5BCOLOR+aquamarine%5D%E2%80%A2+%5B%2FCOLOR%5D%5BCOLORaquamarine%5DArtist%5BCOLORlightgrey%5D+Chart%5B%2FCOLOR%5D&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.enigma%2Fimages%2Fm.gif&amp;fanart=C%3A%5CUsers%5Cgrish%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.enigma%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.enigma/?mode=lastfm&amp;url=chart%2Fartists&amp;name=%5BCOLOR+aquamarine%5D%E2%80%A2+%5B%2FCOLOR%5D%5BCOLORaquamarine%5DArtist%5BCOLORlightgrey%5D+Chart%5B%2FCOLOR%5D&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.enigma%2Fimages%2Fm.gif&amp;fanart=C%3A%5CUsers%5Cgrish%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.enigma%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),musicas)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">5</property>
+			<label>Radio</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cgrish%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.atreides.artwork%5cresources%5cmedia%5catreides%5cradio.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=menu&amp;menu_file=radio&amp;menu_section=radio_root&amp;menu_title=Radio",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=menu&amp;menu_file=radio&amp;menu_section=radio_root&amp;menu_title=Radio",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=menu&amp;menu_file=radio&amp;menu_section=radio_root&amp;menu_title=Radio",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),musicas)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">5</property>
+			<label>The Jukebox</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://https%3a%2f%2fi.imgur.com%2fhzBz7Wk.jpg/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.Maverick/?mode=get_list&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2FFloyd6969%2FDJV%2Fmaster%2FNew%2520Mav%2520Jukebox-k5aKZH5L.txt&amp;name=%5BCOLOR+FFffffffff%5D%5BCOLORlime%5D%5BB%5DThe+Jukebox%5B%2FB%5D%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FhzBz7Wk.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FIGcg7tE.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.Maverick/?mode=get_list&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2FFloyd6969%2FDJV%2Fmaster%2FNew%2520Mav%2520Jukebox-k5aKZH5L.txt&amp;name=%5BCOLOR+FFffffffff%5D%5BCOLORlime%5D%5BB%5DThe+Jukebox%5B%2FB%5D%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FhzBz7Wk.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FIGcg7tE.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.Maverick/?mode=get_list&amp;url=https%3A%2F%2Fraw.githubusercontent.com%2FFloyd6969%2FDJV%2Fmaster%2FNew%2520Mav%2520Jukebox-k5aKZH5L.txt&amp;name=%5BCOLOR+FFffffffff%5D%5BCOLORlime%5D%5BB%5DThe+Jukebox%5B%2FB%5D%5B%2FCOLOR%5D%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FhzBz7Wk.jpg&amp;fanart=https%3A%2F%2Fi.imgur.com%2FIGcg7tE.jpg&amp;description=No+information+available",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),musicas)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
+			<property name="mainmenuid">5</property>
+			<label>$LOCALIZE[14022]</label>
+			<label2 />
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb />
+			<visible>[False] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),musicas)</visible>
+			<onclick>noop</onclick>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">6</property>
+			<label>Eye Candy</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cgrish%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.thecrew.artwork%5cresources%5cmedia%5cthecrew%5ceyecandy.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=eyecandy",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=eyecandy",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=eyecandy",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),favoritos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">6</property>
+			<label>Chains</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cgrish%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.cr%5cicon.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.cr",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.cr",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.cr",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),favoritos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">6</property>
+			<label>Atreides</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cChinaCat%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.atreides%5cicon.png/</thumb>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.atreides",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.atreides",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),favoritos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">6</property>
+			<label>The Crew</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cgrish%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.thecrew%5cicon.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.thecrew",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.thecrew",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.thecrew",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),favoritos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">6</property>
+			<label>Marauder</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cgrish%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.marauder%5cicon.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.marauder",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.marauder",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.marauder",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),favoritos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
+			<property name="mainmenuid">6</property>
+			<label>Enigma</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cgrish%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.enigma%5cicon.gif/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.enigma",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.enigma",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.enigma",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),favoritos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
+			<property name="mainmenuid">6</property>
+			<label>Jor-El</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cChinaCat%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.jor-el%5cicon.png/</thumb>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.jor-el",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.jor-el",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),favoritos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="8">
+			<property name="id">$NUMBER[8]</property>
+			<property name="mainmenuid">6</property>
+			<label>DeathStar</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cChinaCat%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.ds%5cicon.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),favoritos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="9">
+			<property name="id">$NUMBER[9]</property>
+			<property name="mainmenuid">6</property>
+			<label>Maverick</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cgrish%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.Maverick%5cicon.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.Maverick",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.Maverick",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.Maverick",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),favoritos)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">7</property>
+			<label>Holiday Cheer</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cgrish%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.thecrew.artwork%5cresources%5cmedia%5cthecrew%5cholidays.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=holidaysNavigator",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=holidaysNavigator",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=holidaysNavigator",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),relaxar)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">7</property>
+			<label>Documentaries</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://https%3a%2f%2fi.imgur.com%2fGLpNE1i.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.Aspis/?mode=get_list&amp;url=http%3A%2F%2Fstephen-builds.uk%2Fsupremacy%2520new%2Fdocumentaries.xml&amp;name=%5BCOLORaqua%5DDocumentaries%5B%2FCOLOR%5D&amp;iconimage=https%3A%2F%2Fi.imgur.com%2FGLpNE1i.png&amp;fanart=https%3A%2F%2Fi.imgur.com%2FfI4HUZI.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fwww.ezzer-mac.com%2FEzzerman%2FNel%2Fnymeria1%2Ftext%2Fsubmenudocs.xml&amp;name=%C2%B1+%5BB%5D%5BCOLOR+deeppink%5DOne+Click+Play+Docs%5B%2FCOLOR%5D%5B%2FB%5D+%C2%B1&amp;iconimage=http%3A%2F%2Fwww.ezzer-mac.com%2FEzzerman%2FNel%2Ficons%2Fathena123.png&amp;fanart=C%3A%5CUsers%5Cgrish%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fwww.ezzer-mac.com%2FEzzerman%2FNel%2Fnymeria1%2Ftext%2Fsubmenudocs.xml&amp;name=%C2%B1+%5BB%5D%5BCOLOR+deeppink%5DOne+Click+Play+Docs%5B%2FCOLOR%5D%5B%2FB%5D+%C2%B1&amp;iconimage=http%3A%2F%2Fwww.ezzer-mac.com%2FEzzerman%2FNel%2Ficons%2Fathena123.png&amp;fanart=C%3A%5CUsers%5Cgrish%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.ds%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),relaxar)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">7</property>
+			<label>Amazon</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cChinaCat%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.Aspis%5cicon.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.Aspis/?mode=tmdb&amp;url=network%2Fshows%2F1024&amp;name=Amazon&amp;iconimage=C%3A%5CUsers%5CChinaCat%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.Aspis%5Cicon.png&amp;fanart=C%3A%5CUsers%5CChinaCat%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.Aspis%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvshows&amp;url=http%3A%2F%2Fwww.tvmaze.com%2Fwebchannels%2F3%2Famazon",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvshows&amp;url=http%3A%2F%2Fwww.tvmaze.com%2Fwebchannels%2F3%2Famazon",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),relaxar)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">7</property>
+			<label>Netflix</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cChinaCat%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.Aspis%5cicon.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.Aspis/?mode=tmdb&amp;url=network%2Fshows%2F213&amp;name=Netflix&amp;iconimage=C%3A%5CUsers%5CChinaCat%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.Aspis%5Cicon.png&amp;fanart=C%3A%5CUsers%5CChinaCat%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.Aspis%5Cfanart.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvshows&amp;url=http%3A%2F%2Fwww.tvmaze.com%2Fwebchannels%2F1%2Fnetflix",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvshows&amp;url=http%3A%2F%2Fwww.tvmaze.com%2Fwebchannels%2F1%2Fnetflix",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),relaxar)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">7</property>
+			<label>Networks</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cChinaCat%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.atreides.artwork%5cresources%5cmedia%5catreides%5cnetworks.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvNetworks",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvNetworks",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.atreides/?action=tvNetworks",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),relaxar)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
+			<property name="mainmenuid">7</property>
+			<label>Stand Up Comedy</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://http%3a%2f%2fcoots.ml%2fbckodi%2fimages%2fwumpafruit-icons%2ficon.coot.fruit.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fpastebin.com%2Fraw%2FnPeHhjwp&amp;name=Stand+Up+Comedy&amp;iconimage=http%3A%2F%2Fcoots.ml%2Fbckodi%2Fimages%2Fwumpafruit-icons%2Ficon.coot.fruit.png&amp;fanart=http%3A%2F%2Fcoots.ml%2Fbckodi%2Fwumpafruit%2Fimages%2Ffanart.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fpastebin.com%2Fraw%2FnPeHhjwp&amp;name=Stand+Up+Comedy&amp;iconimage=http%3A%2F%2Fcoots.ml%2Fbckodi%2Fimages%2Fwumpafruit-icons%2Ficon.coot.fruit.png&amp;fanart=http%3A%2F%2Fcoots.ml%2Fbckodi%2Fwumpafruit%2Fimages%2Ffanart.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=https%3A%2F%2Fpastebin.com%2Fraw%2FnPeHhjwp&amp;name=Stand+Up+Comedy&amp;iconimage=http%3A%2F%2Fcoots.ml%2Fbckodi%2Fimages%2Fwumpafruit-icons%2Ficon.coot.fruit.png&amp;fanart=http%3A%2F%2Fcoots.ml%2Fbckodi%2Fwumpafruit%2Fimages%2Ffanart.jpg&amp;description=No+information+available",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),relaxar)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">8</property>
+			<label>Rising Tides</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cbrett%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.video.Rising.Tides%5cicon.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.Rising.Tides",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.Rising.Tides",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.Rising.Tides",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-sportsdevil)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">8</property>
+			<label>Titan Sports</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://https%3a%2f%2fmagnetic.website%2fMad%2520Titan%2fmad%2520titan%2520icons%2fsports.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=directory&amp;url=http%3A%2F%2Fmagnetic.website%2FMad%2520Titan%2Flive%2520sports.xml&amp;content=addons",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=directory&amp;url=http%3A%2F%2Fmagnetic.website%2FMad%2520Titan%2Flive%2520sports.xml&amp;content=addons",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=directory&amp;url=http%3A%2F%2Fmagnetic.website%2FMad%2520Titan%2Flive%2520sports.xml&amp;content=addons",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-sportsdevil)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">8</property>
+			<label>The Crew</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cgrish%5cAppData%5cRoaming%5cKodi%5caddons%5cscript.thecrew.artwork%5cresources%5cmedia%5cthecrew%5cmain_bluehat.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=bluehat",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=bluehat",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.thecrew/?action=bluehat",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-sportsdevil)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">8</property>
+			<label>[COLORwhite]UFC[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://http%3a%2f%2fwww.ezzer-mac.com%2ffrank%2fartghost%2fnewghostfanart%2fufc.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fghost%2Fghostxmls%2Fxmls1%2Fufc.xml&amp;name=%5BCOLORwhite%5DUFC%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fartghost%2Fnewghostfanart%2Fufc.png&amp;fanart=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fartghost%2Fdiaz.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fghost%2Fghostxmls%2Fxmls1%2Fufc.xml&amp;name=%5BCOLORwhite%5DUFC%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fartghost%2Fnewghostfanart%2Fufc.png&amp;fanart=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fartghost%2Fdiaz.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=get_list&amp;url=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fghost%2Fghostxmls%2Fxmls1%2Fufc.xml&amp;name=%5BCOLORwhite%5DUFC%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fartghost%2Fnewghostfanart%2Fufc.png&amp;fanart=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fartghost%2Fdiaz.jpg&amp;description=No+information+available",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-sportsdevil)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">8</property>
+			<label>[COLORwhite]SPORT IPTV[/COLOR]</label>
+			<label2>Video Add-On</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://http%3a%2f%2fwww.ezzer-mac.com%2ffrank%2fartghost%2fiptv.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=m3u&amp;url=https%3A%2F%2Fiptv-org.github.io%2Fiptv%2Fcategories%2Fsport.m3u&amp;name=%5BCOLORwhite%5DSPORT+IPTV%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fartghost%2Fiptv.png&amp;fanart=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fartghost%2Fiptv.jpg&amp;description=No+information+available",return)</property>
+			<onclick>ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=m3u&amp;url=https%3A%2F%2Fiptv-org.github.io%2Fiptv%2Fcategories%2Fsport.m3u&amp;name=%5BCOLORwhite%5DSPORT+IPTV%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fartghost%2Fiptv.png&amp;fanart=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fartghost%2Fiptv.jpg&amp;description=No+information+available",return)</onclick>
+			<property name="path">ActivateWindow(Videos,"plugin://plugin.video.ds/?mode=m3u&amp;url=https%3A%2F%2Fiptv-org.github.io%2Fiptv%2Fcategories%2Fsport.m3u&amp;name=%5BCOLORwhite%5DSPORT+IPTV%5B%2FCOLOR%5D&amp;iconimage=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fartghost%2Fiptv.png&amp;fanart=http%3A%2F%2Fwww.ezzer-mac.com%2Ffrank%2Fartghost%2Fiptv.jpg&amp;description=No+information+available",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-sportsdevil)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">9</property>
+			<label>$LOCALIZE[7]</label>
+			<label2 />
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb />
+			<onclick>ActivateWindow(FileManager)</onclick>
+			<property name="path">ActivateWindow(FileManager)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">9</property>
+			<label>INSTALL FROM</label>
+			<label2>Settings</label2>
+			<icon>special://skin/extras/icons/DefaultAddon.png</icon>
+			<thumb />
+			<property name="translatedPath">ActivateWindow(AddonBrowser)</property>
+			<onclick>ActivateWindow(AddonBrowser)</onclick>
+			<property name="path">ActivateWindow(AddonBrowser)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">9</property>
+			<label>Elekta Wizard</label>
+			<label2>Program</label2>
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb>image://C%3a%5cUsers%5cgrish%5cAppData%5cRoaming%5cKodi%5caddons%5cplugin.program.elekta%5cicon.png/</thumb>
+			<property name="translatedPath">ActivateWindow(Programs,"plugin://plugin.program.elekta",return)</property>
+			<onclick>ActivateWindow(Programs,"plugin://plugin.program.elekta",return)</onclick>
+			<property name="path">ActivateWindow(Programs,"plugin://plugin.program.elekta",return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="4">
+			<property name="id">$NUMBER[4]</property>
+			<property name="mainmenuid">9</property>
+			<label>Advanced Settings</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultFolder.png</icon>
+			<thumb>http://hydra9.xyz/hydra9wizard_files/ICONMAINT.png</thumb>
+			<property name="translatedPath">PlayMedia("plugin://plugin.program.hydra9wizard/?mode=autoadvanced",return)</property>
+			<onclick>ActivateWindow(SystemSettings)</onclick>
+			<property name="path">ActivateWindow(SystemSettings)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="5">
+			<property name="id">$NUMBER[5]</property>
+			<property name="mainmenuid">9</property>
+			<label>$LOCALIZE[1037]</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultAddonVideo.png</icon>
+			<thumb />
+			<property name="translatedPath">ActivateWindow(Videos,Addons,return)</property>
+			<onclick>ActivateWindow(Videos,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Videos,Addons,return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="6">
+			<property name="id">$NUMBER[6]</property>
+			<property name="mainmenuid">9</property>
+			<label>Program add-ons</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultFolder.png</icon>
+			<thumb>DefaultAddonProgram.png</thumb>
+			<property name="translatedPath">ActivateWindow(10040,"addons://user/xbmc.addon.executable",return)</property>
+			<onclick>ActivateWindow(Programs,Addons,return)</onclick>
+			<property name="path">ActivateWindow(Programs,Addons,return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="7">
+			<property name="id">$NUMBER[7]</property>
+			<property name="mainmenuid">9</property>
+			<label>$LOCALIZE[20077]</label>
+			<label2 />
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb />
+			<onclick>ActivateWindow(SkinSettings)</onclick>
+			<property name="path">ActivateWindow(SkinSettings)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="1">
+			<property name="id">$NUMBER[1]</property>
+			<property name="mainmenuid">10</property>
+			<label>Pairing + RD</label>
+			<label2>Favourite</label2>
+			<icon>special://skin/extras/icons/DefaultFolder.png</icon>
+			<thumb>C:\Users\ChinaCat\AppData\Roaming\Kodi\addons\script.EleKtaPair\icon.png</thumb>
+			<property name="translatedPath">RunAddon(script.EleKtaPair,return)</property>
+			<onclick>RunAddon(script.EleKtaPair,return)</onclick>
+			<property name="path">RunAddon(script.EleKtaPair,return)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-33060)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="2">
+			<property name="id">$NUMBER[2]</property>
+			<property name="mainmenuid">10</property>
+			<label>$LOCALIZE[13009]</label>
+			<label2 />
+			<icon>special://skin/extras/icons/DefaultAddSource.png</icon>
+			<thumb />
+			<visible>[System.ShowExitButton] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-33060)</visible>
+			<onclick>Quit()</onclick>
+			<property name="path">Quit()</property>
+			<visible>String.IsEqual(System.ProfileName,Master user)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+		<item id="3">
+			<property name="id">$NUMBER[3]</property>
+			<property name="mainmenuid">10</property>
+			<label>Authorize Trakt</label>
+			<label2>Custom item</label2>
+			<icon>special://skin/extras/icons/DefaultFolder.png</icon>
+			<thumb>C:\Users\ChinaCat\AppData\Roaming\Kodi\addons\script.trakt\icon.png</thumb>
+			<property name="translatedPath">RunAddon(script.trakt,return)</property>
+			<onclick>Addon.opensettings(script.trakt)</onclick>
+			<property name="path">Addon.opensettings(script.trakt)</property>
+			<visible>[String.IsEqual(System.ProfileName,Master user)] + String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-33060)</visible>
+			<property name="isSubmenu">True</property>
+		</item>
+	</include>
+	<include />
+	<include name="skinshortcuts-submenu-1" />
+	<include />
+	<include name="skinshortcuts-submenu-2" />
+	<include name="skinshortcuts-template-widget1">
+		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-widget1-Master user</include>
+	</include>
+	<include name="skinshortcuts-template-widget1-Master user">
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-kallplay)</visible>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(80111).NumItems,0)</visible>
+				<control type="group">
+					<top>487</top>
+					<include content="PanelBack">
+						<param name="Texture">homewidgets/bg_clearwhite.png</param>
+						<param name="backColor">FFFFFFFF</param>
+						<param name="backWidth">1472.5</param>
+						<param name="backHeight">276</param>
+					</include>
+					<include content="PanelLabel">
+						<param name="id">80111</param>
+						<param name="Label">[B][COLOR lightsteelblue]Kall[COLOR deepskyblue][B]P[/B][COLOR  lightsteelblue][B]ay[/COLOR][COLOR white]-[COLOR deepskyblue]Multi[COLOR white]-[COLOR dodgerblue]Addons[/COLOR][/B] - [B][COLOR lime]●[/COLOR][COLOR white] LANÇAMENTOS 2020[/COLOR][/B]</param>
+						<param name="Title">$VAR[HomeWidget80111TitleVar]</param>
+						<param name="labelFont">font13_title</param>
+						<param name="labelBottom">257</param>
+						<param name="labelWidth">710</param>
+						<param name="labelLeft">243</param>
+						<param name="labelRight">965.5</param>
+						<param name="labelTitle">false</param>
+					</include>
+				</control>
+			</control>
+			<control type="group">
+				<top>487</top>
+				<control id="80111" type="panel">
+					<left>242.5</left>
+					<width>1435</width>
+					<height>233</height>
+					<orientation>horizontal</orientation>
+					<preloaditems>2</preloaditems>
+					<scrolltime easing="out" tween="quadratic">300</scrolltime>
+					<include>HorizontalNavigation1</include>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,80111)</onfocus>
+					<onunfocus>ClearProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
+					<include content="PortraitArt">
+						<param name="containerWidth">159.4</param>
+						<param name="containerHeight">233</param>
+						<param name="Texture">$VAR[HomeWidgetPosterVar]</param>
+						<param name="leftArt">6.5</param>
+						<param name="topArt">4</param>
+						<param name="widthArt">146.4</param>
+						<param name="heightArt">225</param>
+						<param name="topFakeDiscArt">4</param>
+						<param name="leftCase">2.5</param>
+						<param name="topCase">0</param>
+						<param name="widthCase">154.4</param>
+						<param name="heightCase">233</param>
+						<param name="labelHeight">-29</param>
+						<param name="labelFont">font11</param>
+						<param name="fallbackFont">fontCDalbum</param>
+						<param name="fallbackVisible">false</param>
+						<param name="Aspect">stretch</param>
+						<param name="Aligny">top</param>
+						<param name="Diffuse" />
+						<param name="Case">homewidgets/glass/portrait.png</param>
+						<param name="labelVisible">false</param>
+						<param name="labelFocusVisible">true</param>
+						<param name="isWeather">false</param>
+						<param name="weatherTop" />
+						<param name="weatherHeight" />
+						<param name="weatherTop1" />
+						<param name="weatherTop2" />
+						<param name="weatherTop3" />
+						<param name="weatherFont">font12</param>
+					</include>
+					<content sortby="" sortorder="" target="videos">plugin://plugin.video.kallplay/?url=https%3A%2F%2Ftinyurl.com%2Frxerfvs&amp;mode=1&amp;name=%5BB%5D%5BCOLOR+lime%5D%E2%97%8F%5B%2FCOLOR%5D%5BCOLOR+white%5D+LAN%C3%87AMENTOS+2020%5B%2FCOLOR%5D%5B%2FB%5D&amp;fanart=https%3A%2F%2Fi.imgur.com%2FXbxnDT6.png&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</content>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),movies)</visible>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(80112).NumItems,0)</visible>
+				<control type="group">
+					<top>487</top>
+					<include content="PanelBack">
+						<param name="Texture">homewidgets/bg_clearwhite.png</param>
+						<param name="backColor">FFFFFFFF</param>
+						<param name="backWidth">1472.5</param>
+						<param name="backHeight">276</param>
+					</include>
+					<include content="PanelLabel">
+						<param name="id">80112</param>
+						<param name="Label">Atreides - People Watching</param>
+						<param name="Title">$VAR[HomeWidget80112TitleVar]</param>
+						<param name="labelFont">font13_title</param>
+						<param name="labelBottom">257</param>
+						<param name="labelWidth">710</param>
+						<param name="labelLeft">243</param>
+						<param name="labelRight">965.5</param>
+						<param name="labelTitle">false</param>
+					</include>
+				</control>
+			</control>
+			<control type="group">
+				<top>487</top>
+				<control id="80112" type="panel">
+					<left>242.5</left>
+					<width>1435</width>
+					<height>233</height>
+					<orientation>horizontal</orientation>
+					<preloaditems>2</preloaditems>
+					<scrolltime easing="out" tween="quadratic">300</scrolltime>
+					<include>HorizontalNavigation1</include>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,80112)</onfocus>
+					<onunfocus>ClearProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
+					<include content="PortraitArt">
+						<param name="containerWidth">159.4</param>
+						<param name="containerHeight">233</param>
+						<param name="Texture">$VAR[HomeWidgetPosterVar]</param>
+						<param name="leftArt">6.5</param>
+						<param name="topArt">4</param>
+						<param name="widthArt">146.4</param>
+						<param name="heightArt">225</param>
+						<param name="topFakeDiscArt">4</param>
+						<param name="leftCase">2.5</param>
+						<param name="topCase">0</param>
+						<param name="widthCase">154.4</param>
+						<param name="heightCase">233</param>
+						<param name="labelHeight">-29</param>
+						<param name="labelFont">font11</param>
+						<param name="fallbackFont">fontCDalbum</param>
+						<param name="fallbackVisible">false</param>
+						<param name="Aspect">stretch</param>
+						<param name="Aligny">top</param>
+						<param name="Diffuse" />
+						<param name="Case">homewidgets/glass/portrait.png</param>
+						<param name="labelVisible">false</param>
+						<param name="labelFocusVisible">true</param>
+						<param name="isWeather">false</param>
+						<param name="weatherTop" />
+						<param name="weatherHeight" />
+						<param name="weatherTop1" />
+						<param name="weatherTop2" />
+						<param name="weatherTop3" />
+						<param name="weatherFont">font12</param>
+					</include>
+					<content sortby="" sortorder="" target="videos">plugin://plugin.video.atreides/?action=movies&amp;url=trending&amp;reload=$INFO[Window(Home).Property(widgetreload-movies)]</content>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),series)</visible>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(80113).NumItems,0)</visible>
+				<control type="group">
+					<top>487</top>
+					<include content="PanelBack">
+						<param name="Texture">homewidgets/bg_clearwhite.png</param>
+						<param name="backColor">FFFFFFFF</param>
+						<param name="backWidth">1472.5</param>
+						<param name="backHeight">276</param>
+					</include>
+					<include content="PanelLabel">
+						<param name="id">80113</param>
+						<param name="Label">Atreides - People Watching</param>
+						<param name="Title">$VAR[HomeWidget80113TitleVar]</param>
+						<param name="labelFont">font13_title</param>
+						<param name="labelBottom">257</param>
+						<param name="labelWidth">710</param>
+						<param name="labelLeft">243</param>
+						<param name="labelRight">965.5</param>
+						<param name="labelTitle">false</param>
+					</include>
+				</control>
+			</control>
+			<control type="group">
+				<top>487</top>
+				<control id="80113" type="panel">
+					<left>242.5</left>
+					<width>1435</width>
+					<height>233</height>
+					<orientation>horizontal</orientation>
+					<preloaditems>2</preloaditems>
+					<scrolltime easing="out" tween="quadratic">300</scrolltime>
+					<include>HorizontalNavigation1</include>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,80113)</onfocus>
+					<onunfocus>ClearProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
+					<include content="PortraitArt">
+						<param name="containerWidth">159.4</param>
+						<param name="containerHeight">233</param>
+						<param name="Texture">$VAR[HomeWidgetPosterVar]</param>
+						<param name="leftArt">6.5</param>
+						<param name="topArt">4</param>
+						<param name="widthArt">146.4</param>
+						<param name="heightArt">225</param>
+						<param name="topFakeDiscArt">4</param>
+						<param name="leftCase">2.5</param>
+						<param name="topCase">0</param>
+						<param name="widthCase">154.4</param>
+						<param name="heightCase">233</param>
+						<param name="labelHeight">-29</param>
+						<param name="labelFont">font11</param>
+						<param name="fallbackFont">fontCDalbum</param>
+						<param name="fallbackVisible">false</param>
+						<param name="Aspect">stretch</param>
+						<param name="Aligny">top</param>
+						<param name="Diffuse" />
+						<param name="Case">homewidgets/glass/portrait.png</param>
+						<param name="labelVisible">false</param>
+						<param name="labelFocusVisible">false</param>
+						<param name="isWeather">false</param>
+						<param name="weatherTop" />
+						<param name="weatherHeight" />
+						<param name="weatherTop1" />
+						<param name="weatherTop2" />
+						<param name="weatherTop3" />
+						<param name="weatherFont">font12</param>
+					</include>
+					<content sortby="" sortorder="" target="videos">plugin://plugin.video.atreides/?action=tvshows&amp;url=trending&amp;reload=$INFO[Window(Home).Property(widgetreload-episodes)]</content>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),desenhos)</visible>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(80114).NumItems,0)</visible>
+				<control type="group">
+					<top>487</top>
+					<include content="PanelBack">
+						<param name="Texture">homewidgets/bg_clearwhite.png</param>
+						<param name="backColor">$VAR[WidgetBackgroundColor]</param>
+						<param name="backWidth">1472.5</param>
+						<param name="backHeight">276</param>
+					</include>
+					<include content="PanelLabel">
+						<param name="id">80114</param>
+						<param name="Label">DigiBox - [COLOR FFffffffff]Kids list[/COLOR]</param>
+						<param name="Title">$VAR[HomeWidget80114TitleVar]</param>
+						<param name="labelFont">font13_title</param>
+						<param name="labelBottom">257</param>
+						<param name="labelWidth">710</param>
+						<param name="labelLeft">243</param>
+						<param name="labelRight">965.5</param>
+						<param name="labelTitle">false</param>
+					</include>
+				</control>
+			</control>
+			<control type="group">
+				<top>487</top>
+				<control id="80114" type="panel">
+					<left>242.5</left>
+					<width>1435</width>
+					<height>233</height>
+					<orientation>horizontal</orientation>
+					<preloaditems>2</preloaditems>
+					<scrolltime easing="out" tween="quadratic">300</scrolltime>
+					<include>HorizontalNavigation1</include>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,80114)</onfocus>
+					<onunfocus>ClearProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
+					<include content="PortraitArt">
+						<param name="containerWidth">159.4</param>
+						<param name="containerHeight">233</param>
+						<param name="Texture">$VAR[HomeWidgetPosterVar]</param>
+						<param name="leftArt">6.5</param>
+						<param name="topArt">4</param>
+						<param name="widthArt">146.4</param>
+						<param name="heightArt">225</param>
+						<param name="topFakeDiscArt">4</param>
+						<param name="leftCase">2.5</param>
+						<param name="topCase">0</param>
+						<param name="widthCase">154.4</param>
+						<param name="heightCase">233</param>
+						<param name="labelHeight">-29</param>
+						<param name="labelFont">font11</param>
+						<param name="fallbackFont">fontCDalbum</param>
+						<param name="fallbackVisible">false</param>
+						<param name="Aspect">stretch</param>
+						<param name="Aligny">top</param>
+						<param name="Diffuse" />
+						<param name="Case">homewidgets/glass/portrait.png</param>
+						<param name="labelVisible">true</param>
+						<param name="labelFocusVisible">true</param>
+						<param name="isWeather">false</param>
+						<param name="weatherTop" />
+						<param name="weatherHeight" />
+						<param name="weatherTop1" />
+						<param name="weatherTop2" />
+						<param name="weatherTop3" />
+						<param name="weatherFont">font12</param>
+					</include>
+					<content sortby="" sortorder="" target="videos">plugin://plugin.video.digibox/?mode=get_list&amp;url=file%3A%2F%2FKidslist.xml&amp;name=%5BCOLOR+FFffffffff%5DKids+list%5B%2FCOLOR%5D&amp;iconimage=special%3A%2F%2Fhome%2Faddons%2Fplugin.video.digibox%2Fresources%2Fmedia%2FMovie_new.png&amp;fanart=C%3A%5CUsers%5CChinaCat%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.digibox%5Cfanart.jpg&amp;description=No+information+available&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</content>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),musicas)</visible>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(80115).NumItems,0)</visible>
+				<control type="group">
+					<top>487</top>
+					<include content="PanelBack">
+						<param name="Texture">homewidgets/bg_clearwhite.png</param>
+						<param name="backColor">FFFFFFFF</param>
+						<param name="backWidth">1472.5</param>
+						<param name="backHeight">276</param>
+					</include>
+					<include content="PanelLabel">
+						<param name="id">80115</param>
+						<param name="Label">[COLOR white][B]FDJ[COLOR lime].[COLOR white]HD[/B][/COLOR] - [COLOR lime][B]. [COLOR white]Alive[COLOR lime].[COLOR white]HD[/B][/COLOR]</param>
+						<param name="Title">$VAR[HomeWidget80115TitleVar]</param>
+						<param name="labelFont">font13_title</param>
+						<param name="labelBottom">257</param>
+						<param name="labelWidth">710</param>
+						<param name="labelLeft">243</param>
+						<param name="labelRight">965.5</param>
+						<param name="labelTitle">false</param>
+					</include>
+				</control>
+			</control>
+			<control type="group">
+				<top>487</top>
+				<control id="80115" type="panel">
+					<left>242.5</left>
+					<width>1435</width>
+					<height>233</height>
+					<orientation>horizontal</orientation>
+					<preloaditems>2</preloaditems>
+					<scrolltime easing="out" tween="quadratic">300</scrolltime>
+					<include>HorizontalNavigation1</include>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,80115)</onfocus>
+					<onunfocus>ClearProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
+					<include content="PortraitArt">
+						<param name="containerWidth">159.4</param>
+						<param name="containerHeight">233</param>
+						<param name="Texture">$VAR[HomeWidgetPosterVar]</param>
+						<param name="leftArt">6.5</param>
+						<param name="topArt">4</param>
+						<param name="widthArt">146.4</param>
+						<param name="heightArt">225</param>
+						<param name="topFakeDiscArt">4</param>
+						<param name="leftCase">2.5</param>
+						<param name="topCase">0</param>
+						<param name="widthCase">154.4</param>
+						<param name="heightCase">233</param>
+						<param name="labelHeight">-29</param>
+						<param name="labelFont">font11</param>
+						<param name="fallbackFont">fontCDalbum</param>
+						<param name="fallbackVisible">false</param>
+						<param name="Aspect">stretch</param>
+						<param name="Aligny">top</param>
+						<param name="Diffuse" />
+						<param name="Case">homewidgets/glass/portrait.png</param>
+						<param name="labelVisible">false</param>
+						<param name="labelFocusVisible">true</param>
+						<param name="isWeather">false</param>
+						<param name="weatherTop" />
+						<param name="weatherHeight" />
+						<param name="weatherTop1" />
+						<param name="weatherTop2" />
+						<param name="weatherTop3" />
+						<param name="weatherFont">font12</param>
+					</include>
+					<content sortby="" sortorder="" target="videos">plugin://plugin.video.fdj.hd/?url=http%3A%2F%2Ffrenchdj.atspace.tv%2FFDJ%2FAlive.HD%2FAlive.HD.xml&amp;mode=1&amp;name=%5BCOLOR+lime%5D%5BB%5D.+%5BCOLOR+white%5DAlive%5BCOLOR+lime%5D.%5BCOLOR+white%5DHD%5B%2FB%5D%5B%2FCOLOR%5D&amp;fanart=C%3A%5CUsers%5Cgrish%5CAppData%5CRoaming%5CKodi%5Caddons%5Cplugin.video.fdj.hd%5Cfanart.gif&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</content>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),favoritos)</visible>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(80116).NumItems,0)</visible>
+				<control type="group">
+					<top>487</top>
+					<include content="PanelBack">
+						<param name="Texture">homewidgets/bg_clearwhite.png</param>
+						<param name="backColor">FFFFFFFF</param>
+						<param name="backWidth">1472.5</param>
+						<param name="backHeight">276</param>
+					</include>
+					<include content="PanelLabel">
+						<param name="id">80116</param>
+						<param name="Label">DeathStar EIM -  Popular Movies</param>
+						<param name="Title">$VAR[HomeWidget80116TitleVar]</param>
+						<param name="labelFont">font13_title</param>
+						<param name="labelBottom">257</param>
+						<param name="labelWidth">710</param>
+						<param name="labelLeft">243</param>
+						<param name="labelRight">965.5</param>
+						<param name="labelTitle">false</param>
+					</include>
+				</control>
+			</control>
+			<control type="group">
+				<top>487</top>
+				<control id="80116" type="panel">
+					<left>242.5</left>
+					<width>1435</width>
+					<height>233</height>
+					<orientation>horizontal</orientation>
+					<preloaditems>2</preloaditems>
+					<scrolltime easing="out" tween="quadratic">300</scrolltime>
+					<include>HorizontalNavigation1</include>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,80116)</onfocus>
+					<onunfocus>ClearProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
+					<include content="PortraitArt">
+						<param name="containerWidth">159.4</param>
+						<param name="containerHeight">233</param>
+						<param name="Texture">$VAR[HomeWidgetPosterVar]</param>
+						<param name="leftArt">6.5</param>
+						<param name="topArt">4</param>
+						<param name="widthArt">146.4</param>
+						<param name="heightArt">225</param>
+						<param name="topFakeDiscArt">4</param>
+						<param name="leftCase">2.5</param>
+						<param name="topCase">0</param>
+						<param name="widthCase">154.4</param>
+						<param name="heightCase">233</param>
+						<param name="labelHeight">-29</param>
+						<param name="labelFont">font11</param>
+						<param name="fallbackFont">fontCDalbum</param>
+						<param name="fallbackVisible">false</param>
+						<param name="Aspect">stretch</param>
+						<param name="Aligny">top</param>
+						<param name="Diffuse" />
+						<param name="Case">homewidgets/glass/portrait.png</param>
+						<param name="labelVisible">false</param>
+						<param name="labelFocusVisible">true</param>
+						<param name="isWeather">false</param>
+						<param name="weatherTop" />
+						<param name="weatherHeight" />
+						<param name="weatherTop1" />
+						<param name="weatherTop2" />
+						<param name="weatherTop3" />
+						<param name="weatherFont">font12</param>
+					</include>
+					<content sortby="" sortorder="" target="videos">plugin://script.extendedinfo?info=popularmovies</content>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),relaxar)</visible>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(80117).NumItems,0)</visible>
+				<control type="group">
+					<top>487</top>
+					<include content="PanelBack">
+						<param name="Texture">homewidgets/bg_clearwhite.png</param>
+						<param name="backColor">FFFFFFFF</param>
+						<param name="backWidth">1472.5</param>
+						<param name="backHeight">276</param>
+					</include>
+					<include content="PanelLabel">
+						<param name="id">80117</param>
+						<param name="Label">Mx-wing - Trending Movies</param>
+						<param name="Title">$VAR[HomeWidget80117TitleVar]</param>
+						<param name="labelFont">font13_title</param>
+						<param name="labelBottom">257</param>
+						<param name="labelWidth">710</param>
+						<param name="labelLeft">243</param>
+						<param name="labelRight">965.5</param>
+						<param name="labelTitle">false</param>
+					</include>
+				</control>
+			</control>
+			<control type="group">
+				<top>487</top>
+				<control id="80117" type="panel">
+					<left>242.5</left>
+					<width>1435</width>
+					<height>233</height>
+					<orientation>horizontal</orientation>
+					<preloaditems>2</preloaditems>
+					<scrolltime easing="out" tween="quadratic">300</scrolltime>
+					<include>HorizontalNavigation1</include>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,80117)</onfocus>
+					<onunfocus>ClearProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
+					<include content="PortraitArt">
+						<param name="containerWidth">159.4</param>
+						<param name="containerHeight">233</param>
+						<param name="Texture">$VAR[HomeWidgetPosterVar]</param>
+						<param name="leftArt">6.5</param>
+						<param name="topArt">4</param>
+						<param name="widthArt">146.4</param>
+						<param name="heightArt">225</param>
+						<param name="topFakeDiscArt">4</param>
+						<param name="leftCase">2.5</param>
+						<param name="topCase">0</param>
+						<param name="widthCase">154.4</param>
+						<param name="heightCase">233</param>
+						<param name="labelHeight">-29</param>
+						<param name="labelFont">font11</param>
+						<param name="fallbackFont">fontCDalbum</param>
+						<param name="fallbackVisible">false</param>
+						<param name="Aspect">stretch</param>
+						<param name="Aligny">top</param>
+						<param name="Diffuse" />
+						<param name="Case">homewidgets/glass/portrait.png</param>
+						<param name="labelVisible">true</param>
+						<param name="labelFocusVisible">true</param>
+						<param name="isWeather">false</param>
+						<param name="weatherTop" />
+						<param name="weatherHeight" />
+						<param name="weatherTop1" />
+						<param name="weatherTop2" />
+						<param name="weatherTop3" />
+						<param name="weatherFont">font12</param>
+					</include>
+					<content sortby="" sortorder="" target="videos">plugin://plugin.video.x-wing/movies/trakt/trending/1?reload=$INFO[Window(Home).Property(widgetreload-movies)]</content>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),plugin-video-sportsdevil)</visible>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(80118).NumItems,0)</visible>
+				<control type="group">
+					<top>504</top>
+					<include content="PanelBack">
+						<param name="Texture">homewidgets/bg_clearwhite.png</param>
+						<param name="backColor">FFFFFFFF</param>
+						<param name="backWidth">1472.5</param>
+						<param name="backHeight">242</param>
+					</include>
+					<include content="PanelLabel">
+						<param name="id">80118</param>
+						<param name="Label">THE CREW - Sports</param>
+						<param name="Title">$VAR[HomeWidget80118TitleVar]</param>
+						<param name="labelFont">font13_title</param>
+						<param name="labelBottom">223</param>
+						<param name="labelWidth">710</param>
+						<param name="labelLeft">243</param>
+						<param name="labelRight">965.5</param>
+						<param name="labelTitle">false</param>
+					</include>
+				</control>
+			</control>
+			<control type="group">
+				<top>504</top>
+				<control id="80118" type="panel">
+					<left>242.5</left>
+					<width>1435</width>
+					<height>233</height>
+					<orientation>horizontal</orientation>
+					<preloaditems>2</preloaditems>
+					<scrolltime easing="out" tween="quadratic">300</scrolltime>
+					<include>HorizontalNavigation1</include>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,80118)</onfocus>
+					<onunfocus>ClearProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
+					<include content="SquareArt">
+						<param name="containerWidth">205</param>
+						<param name="containerHeight">200</param>
+						<param name="Texture">$VAR[HomeWidgetPosterVar]</param>
+						<param name="leftArt">6.5</param>
+						<param name="topArt">4</param>
+						<param name="widthArt">192</param>
+						<param name="heightArt">192</param>
+						<param name="topFakeDiscArt">4</param>
+						<param name="leftCase">2.5</param>
+						<param name="topCase">0</param>
+						<param name="widthCase">200</param>
+						<param name="heightCase">200</param>
+						<param name="labelHeight">-29</param>
+						<param name="labelFont">font11</param>
+						<param name="fallbackFont">fontCDalbum</param>
+						<param name="fallbackVisible">false</param>
+						<param name="Aspect">scale</param>
+						<param name="Aligny">top</param>
+						<param name="Diffuse" />
+						<param name="Case">homewidgets/glass/square.png</param>
+						<param name="labelVisible">false</param>
+						<param name="labelFocusVisible">true</param>
+						<param name="isWeather">false</param>
+						<param name="weatherTop" />
+						<param name="weatherHeight" />
+						<param name="weatherTop1" />
+						<param name="weatherTop2" />
+						<param name="weatherTop3" />
+						<param name="weatherFont">font12</param>
+					</include>
+					<content sortby="" sortorder="" target="videos">plugin://plugin.video.thecrew/?action=bluehat&amp;reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</content>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),num-13000)</visible>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(80119).NumItems,0)</visible>
+				<control type="group">
+					<top>504</top>
+					<include content="PanelBack">
+						<param name="Texture">homewidgets/bg_clearwhite.png</param>
+						<param name="backColor">FFFFFFFF</param>
+						<param name="backWidth">1472.5</param>
+						<param name="backHeight">242</param>
+					</include>
+					<include content="PanelLabel">
+						<param name="id">80119</param>
+						<param name="Label">[COLOR cyan]E[COLOR mediumorchid]lekta [COLOR cyan]W[COLOR mediumorchid]izard[/COLOR]</param>
+						<param name="Title">$VAR[HomeWidget80119TitleVar]</param>
+						<param name="labelFont">font13_title</param>
+						<param name="labelBottom">223</param>
+						<param name="labelWidth">710</param>
+						<param name="labelLeft">243</param>
+						<param name="labelRight">965.5</param>
+						<param name="labelTitle">false</param>
+					</include>
+				</control>
+			</control>
+			<control type="group">
+				<top>504</top>
+				<control id="80119" type="panel">
+					<left>242.5</left>
+					<width>1435</width>
+					<height>233</height>
+					<orientation>horizontal</orientation>
+					<preloaditems>2</preloaditems>
+					<scrolltime easing="out" tween="quadratic">300</scrolltime>
+					<include>HorizontalNavigation1</include>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,80119)</onfocus>
+					<onunfocus>ClearProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
+					<include content="SquareArt">
+						<param name="containerWidth">205</param>
+						<param name="containerHeight">200</param>
+						<param name="Texture">$VAR[HomeWidgetPosterVar]</param>
+						<param name="leftArt">6.5</param>
+						<param name="topArt">4</param>
+						<param name="widthArt">192</param>
+						<param name="heightArt">192</param>
+						<param name="topFakeDiscArt">4</param>
+						<param name="leftCase">2.5</param>
+						<param name="topCase">0</param>
+						<param name="widthCase">200</param>
+						<param name="heightCase">200</param>
+						<param name="labelHeight">-29</param>
+						<param name="labelFont">font11</param>
+						<param name="fallbackFont">fontCDalbum</param>
+						<param name="fallbackVisible">false</param>
+						<param name="Aspect">scale</param>
+						<param name="Aligny">top</param>
+						<param name="Diffuse" />
+						<param name="Case">homewidgets/glass/square.png</param>
+						<param name="labelVisible">true</param>
+						<param name="labelFocusVisible">true</param>
+						<param name="isWeather">false</param>
+						<param name="weatherTop" />
+						<param name="weatherHeight" />
+						<param name="weatherTop1" />
+						<param name="weatherTop2" />
+						<param name="weatherTop3" />
+						<param name="weatherFont">font12</param>
+					</include>
+					<content sortby="" sortorder="" target="programs">plugin://plugin.program.elekta?reload=$INFO[Window(Home).Property(widgetreload)]$INFO[Window(Home).Property(widgetreload2)]</content>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="skinshortcuts-template-WidgetTitle">
+		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-WidgetTitle-Master user</include>
+	</include>
+	<include name="skinshortcuts-template-WidgetTitle-Master user" />
+	<include name="skinshortcuts-template-widget.1.backgroundFanart">
+		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-widget.1.backgroundFanart-Master user</include>
+	</include>
+	<include name="skinshortcuts-template-widget.1.backgroundFanart-Master user">
+		<include content="WidgetHomeFanart">
+			<param name="id">80111</param>
+			<param name="Visible">Control.HasFocus(80111) + !String.IsEmpty(Container(80111).ListItem.Art(fanart))</param>
+			<param name="isWeather">False</param>
+			<param name="imagePath">$INFO[Container(80111).ListItem.Art(fanart)]</param>
+			<param name="imagePathMulti" />
+		</include>
+		<include content="WidgetHomeFanart">
+			<param name="id">80112</param>
+			<param name="Visible">Control.HasFocus(80112) + !String.IsEmpty(Container(80112).ListItem.Art(fanart))</param>
+			<param name="isWeather">False</param>
+			<param name="imagePath">$INFO[Container(80112).ListItem.Art(fanart)]</param>
+			<param name="imagePathMulti" />
+		</include>
+		<include content="WidgetHomeFanart">
+			<param name="id">80113</param>
+			<param name="Visible">Control.HasFocus(80113) + !String.IsEmpty(Container(80113).ListItem.Art(fanart))</param>
+			<param name="isWeather">False</param>
+			<param name="imagePath">$INFO[Container(80113).ListItem.Art(fanart)]</param>
+			<param name="imagePathMulti" />
+		</include>
+		<include content="WidgetHomeFanart">
+			<param name="id">80114</param>
+			<param name="Visible">Control.HasFocus(80114) + !String.IsEmpty(Container(80114).ListItem.Art(fanart))</param>
+			<param name="isWeather">False</param>
+			<param name="imagePath">$INFO[Container(80114).ListItem.Art(fanart)]</param>
+			<param name="imagePathMulti" />
+		</include>
+		<include content="WidgetHomeFanart">
+			<param name="id">80115</param>
+			<param name="Visible">Control.HasFocus(80115) + !String.IsEmpty(Container(80115).ListItem.Art(fanart))</param>
+			<param name="isWeather">False</param>
+			<param name="imagePath">$INFO[Container(80115).ListItem.Art(fanart)]</param>
+			<param name="imagePathMulti" />
+		</include>
+		<include content="WidgetHomeFanart">
+			<param name="id">80116</param>
+			<param name="Visible">Control.HasFocus(80116) + !String.IsEmpty(Container(80116).ListItem.Art(fanart))</param>
+			<param name="isWeather">False</param>
+			<param name="imagePath">$INFO[Container(80116).ListItem.Art(fanart)]</param>
+			<param name="imagePathMulti" />
+		</include>
+		<include content="WidgetHomeFanart">
+			<param name="id">80117</param>
+			<param name="Visible">Control.HasFocus(80117) + !String.IsEmpty(Container(80117).ListItem.Art(fanart))</param>
+			<param name="isWeather">False</param>
+			<param name="imagePath">$INFO[Container(80117).ListItem.Art(fanart)]</param>
+			<param name="imagePathMulti" />
+		</include>
+		<include content="WidgetHomeFanart">
+			<param name="id">80118</param>
+			<param name="Visible">Control.HasFocus(80118) + !String.IsEmpty(Container(80118).ListItem.Art(fanart))</param>
+			<param name="isWeather">False</param>
+			<param name="imagePath">$INFO[Container(80118).ListItem.Art(fanart)]</param>
+			<param name="imagePathMulti" />
+		</include>
+		<include content="WidgetHomeFanart">
+			<param name="id">80119</param>
+			<param name="Visible">Control.HasFocus(80119) + !String.IsEmpty(Container(80119).ListItem.Art(fanart))</param>
+			<param name="isWeather">False</param>
+			<param name="imagePath">$INFO[Container(80119).ListItem.Art(fanart)]</param>
+			<param name="imagePathMulti" />
+		</include>
+	</include>
+	<include name="skinshortcuts-template-widget2">
+		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-widget2-Master user</include>
+	</include>
+	<include name="skinshortcuts-template-widget2-Master user">
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),favoritos)</visible>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(80216).NumItems,0)</visible>
+				<control type="group">
+					<top>145</top>
+					<include content="PanelBack">
+						<param name="Texture">homewidgets/bg_clearwhite.png</param>
+						<param name="backColor">$VAR[WidgetBackgroundColor]</param>
+						<param name="backWidth">1472.5</param>
+						<param name="backHeight">242</param>
+					</include>
+					<include content="PanelLabel">
+						<param name="id">80216</param>
+						<param name="Label">AndroidApp://sources/apps</param>
+						<param name="Title">$VAR[HomeWidget80216TitleVar]</param>
+						<param name="labelFont">font13_title</param>
+						<param name="labelBottom">223</param>
+						<param name="labelWidth">710</param>
+						<param name="labelLeft">243</param>
+						<param name="labelRight">965.5</param>
+						<param name="labelTitle">false</param>
+					</include>
+				</control>
+			</control>
+			<control type="group">
+				<top>145</top>
+				<control id="80216" type="panel">
+					<left>242.5</left>
+					<width>1435</width>
+					<height>233</height>
+					<orientation>horizontal</orientation>
+					<preloaditems>2</preloaditems>
+					<scrolltime easing="out" tween="quadratic">300</scrolltime>
+					<include>HorizontalNavigation2</include>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,80216)</onfocus>
+					<onunfocus>ClearProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
+					<include content="SquareArt">
+						<param name="containerWidth">205</param>
+						<param name="containerHeight">200</param>
+						<param name="Texture">$VAR[HomeWidgetPosterVar]</param>
+						<param name="leftArt">6.5</param>
+						<param name="topArt">4</param>
+						<param name="widthArt">192</param>
+						<param name="heightArt">192</param>
+						<param name="topFakeDiscArt">4</param>
+						<param name="leftCase">2.5</param>
+						<param name="topCase">0</param>
+						<param name="widthCase">200</param>
+						<param name="heightCase">200</param>
+						<param name="labelHeight">-29</param>
+						<param name="labelFont">font11</param>
+						<param name="fallbackFont">fontCDalbum</param>
+						<param name="fallbackVisible">false</param>
+						<param name="Aspect">scale</param>
+						<param name="Aligny">top</param>
+						<param name="Diffuse" />
+						<param name="Case">homewidgets/glass/square.png</param>
+						<param name="labelVisible">false</param>
+						<param name="labelFocusVisible">true</param>
+						<param name="isWeather">false</param>
+						<param name="weatherTop" />
+						<param name="weatherHeight" />
+						<param name="weatherTop1" />
+						<param name="weatherTop2" />
+						<param name="weatherTop3" />
+						<param name="weatherFont">font12</param>
+					</include>
+					<content sortby="" sortorder="" target="">
+						<include>skinshortcuts-submenu-2</include>
+					</content>
+				</control>
+			</control>
+		</control>
+		<control type="group">
+			<visible>String.IsEqual(Container(9000).ListItem.Property(submenuVisibility),relaxar)</visible>
+			<control type="group">
+				<visible>Integer.IsGreater(Container(80217).NumItems,0)</visible>
+				<control type="group">
+					<top>145</top>
+					<include content="PanelBack">
+						<param name="Texture">homewidgets/bg_clear.png</param>
+						<param name="backColor">FF0B0B0B</param>
+						<param name="backWidth">1472.5</param>
+						<param name="backHeight">242</param>
+					</include>
+					<include content="PanelLabel">
+						<param name="id">80217</param>
+						<param name="Label">10508</param>
+						<param name="Title">$VAR[HomeWidget80217TitleVar]</param>
+						<param name="labelFont">font13_title</param>
+						<param name="labelBottom">223</param>
+						<param name="labelWidth">710</param>
+						<param name="labelLeft">243</param>
+						<param name="labelRight">965.5</param>
+						<param name="labelTitle">false</param>
+					</include>
+				</control>
+			</control>
+			<control type="group">
+				<top>145</top>
+				<control id="80217" type="panel">
+					<left>242.5</left>
+					<width>1435</width>
+					<height>233</height>
+					<orientation>horizontal</orientation>
+					<preloaditems>2</preloaditems>
+					<scrolltime easing="out" tween="quadratic">300</scrolltime>
+					<include>HorizontalNavigation2</include>
+					<onfocus>SetProperty(SkinHelper.WidgetContainer,80217)</onfocus>
+					<onunfocus>ClearProperty(SkinHelper.WidgetContainer,Home)</onunfocus>
+					<include content="SquareArt">
+						<param name="containerWidth">205</param>
+						<param name="containerHeight">200</param>
+						<param name="Texture">$VAR[HomeWidgetPosterVar]</param>
+						<param name="leftArt">6.5</param>
+						<param name="topArt">4</param>
+						<param name="widthArt">192</param>
+						<param name="heightArt">192</param>
+						<param name="topFakeDiscArt">4</param>
+						<param name="leftCase">2.5</param>
+						<param name="topCase">0</param>
+						<param name="widthCase">200</param>
+						<param name="heightCase">200</param>
+						<param name="labelHeight">-29</param>
+						<param name="labelFont">font11</param>
+						<param name="fallbackFont">fontCDalbum</param>
+						<param name="fallbackVisible">false</param>
+						<param name="Aspect">scale</param>
+						<param name="Aligny">top</param>
+						<param name="Diffuse" />
+						<param name="Case">homewidgets/glass/square.png</param>
+						<param name="labelVisible">false</param>
+						<param name="labelFocusVisible">false</param>
+						<param name="isWeather">true</param>
+						<param name="weatherTop">39</param>
+						<param name="weatherHeight">96</param>
+						<param name="weatherTop1">0</param>
+						<param name="weatherTop2">135</param>
+						<param name="weatherTop3">166</param>
+						<param name="weatherFont">font12</param>
+					</include>
+					<content sortby="" sortorder="" target="">
+						<include>WeatherContent</include>
+					</content>
+				</control>
+			</control>
+		</control>
+	</include>
+	<include name="skinshortcuts-template-WidgetTitle.2">
+		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-WidgetTitle.2-Master user</include>
+	</include>
+	<include name="skinshortcuts-template-WidgetTitle.2-Master user" />
+	<include name="skinshortcuts-template-widget.2.backgroundFanart">
+		<include condition="String.IsEqual(System.ProfileName,Master user)">skinshortcuts-template-widget.2.backgroundFanart-Master user</include>
+	</include>
+	<include name="skinshortcuts-template-widget.2.backgroundFanart-Master user">
+		<include content="WidgetHomeFanart">
+			<param name="id">80216</param>
+			<param name="Visible">Control.HasFocus(80216) + !String.IsEmpty(Container(80216).ListItem.Art(fanart))</param>
+			<param name="isWeather">False</param>
+			<param name="imagePath">$INFO[Container(80216).ListItem.Art(fanart)]</param>
+			<param name="imagePathMulti" />
+		</include>
+		<include content="WidgetHomeFanart">
+			<param name="id">80217</param>
+			<param name="Visible">Control.HasFocus(80217)</param>
+			<param name="isWeather">True</param>
+			<param name="imagePath">$INFO[Container(80217).ListItem.Property(Fanart)]</param>
+			<param name="imagePathMulti">$INFO[Container(80217).ListItem.Property(WeatherMultiFanart)]</param>
+		</include>
+	</include>
+	<variable name="HomeWidget80111TitleVar">
+		<value condition="!String.IsEmpty(Container(80111).ListItem.AddonName)">$INFO[Container(80111).ListItem.AddonName]</value>
+		<value condition="[!Integer.IsGreater(Container(80111).ListItem.Season,9) + !Integer.IsGreater(Container(80111).ListItem.Episode,9)] + !String.StartsWith(Container(80111).ListItem.Episode,S) + !String.IsEmpty(Container(80111).ListItem.Episode) + !String.IsEqual(Container(80111).ListItem.Label,Container(80111).ListItem.TVShowTitle)">$INFO[Container(80111).ListItem.Season,S0]$INFO[Container(80111).ListItem.Episode,E0] $INFO[Container(80111).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80111).ListItem.Season,9) + !Integer.IsGreater(Container(80111).ListItem.Episode,9)] + String.StartsWith(Container(80111).ListItem.Episode,S) + !String.IsEmpty(Container(80111).ListItem.Episode) + !String.IsEqual(Container(80111).ListItem.Label,Container(80111).ListItem.TVShowTitle)">$INFO[Container(80111).ListItem.Season,S0]$INFO[Container(80111).ListItem.Episode] $INFO[Container(80111).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80111).ListItem.Season,9) + Integer.IsGreater(Container(80111).ListItem.Episode,9)] + !String.IsEmpty(Container(80111).ListItem.Episode) + !String.IsEqual(Container(80111).ListItem.Label,Container(80111).ListItem.TVShowTitle)">$INFO[Container(80111).ListItem.Season,S0]$INFO[Container(80111).ListItem.Episode,E] $INFO[Container(80111).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80111).ListItem.Season,9) + !Integer.IsGreater(Container(80111).ListItem.Episode,9)] + !String.IsEmpty(Container(80111).ListItem.Episode) + !String.IsEqual(Container(80111).ListItem.Label,Container(80111).ListItem.TVShowTitle)">$INFO[Container(80111).ListItem.Season,S]$INFO[Container(80111).ListItem.Episode,E0] $INFO[Container(80111).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80111).ListItem.Season,9) + Integer.IsGreater(Container(80111).ListItem.Episode,9)] + !String.IsEmpty(Container(80111).ListItem.Episode) + !String.IsEqual(Container(80111).ListItem.Label,Container(80111).ListItem.TVShowTitle)">$INFO[Container(80111).ListItem.Season,S]$INFO[Container(80111).ListItem.Episode,E] $INFO[Container(80111).ListItem.Title]</value>
+		<value>$INFO[Container(80111).ListItem.Label]</value>
+	</variable>
+	<variable name="HomeWidget80112TitleVar">
+		<value condition="!String.IsEmpty(Container(80112).ListItem.AddonName)">$INFO[Container(80112).ListItem.AddonName]</value>
+		<value condition="[!Integer.IsGreater(Container(80112).ListItem.Season,9) + !Integer.IsGreater(Container(80112).ListItem.Episode,9)] + !String.StartsWith(Container(80112).ListItem.Episode,S) + !String.IsEmpty(Container(80112).ListItem.Episode) + !String.IsEqual(Container(80112).ListItem.Label,Container(80112).ListItem.TVShowTitle)">$INFO[Container(80112).ListItem.Season,S0]$INFO[Container(80112).ListItem.Episode,E0] $INFO[Container(80112).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80112).ListItem.Season,9) + !Integer.IsGreater(Container(80112).ListItem.Episode,9)] + String.StartsWith(Container(80112).ListItem.Episode,S) + !String.IsEmpty(Container(80112).ListItem.Episode) + !String.IsEqual(Container(80112).ListItem.Label,Container(80112).ListItem.TVShowTitle)">$INFO[Container(80112).ListItem.Season,S0]$INFO[Container(80112).ListItem.Episode] $INFO[Container(80112).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80112).ListItem.Season,9) + Integer.IsGreater(Container(80112).ListItem.Episode,9)] + !String.IsEmpty(Container(80112).ListItem.Episode) + !String.IsEqual(Container(80112).ListItem.Label,Container(80112).ListItem.TVShowTitle)">$INFO[Container(80112).ListItem.Season,S0]$INFO[Container(80112).ListItem.Episode,E] $INFO[Container(80112).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80112).ListItem.Season,9) + !Integer.IsGreater(Container(80112).ListItem.Episode,9)] + !String.IsEmpty(Container(80112).ListItem.Episode) + !String.IsEqual(Container(80112).ListItem.Label,Container(80112).ListItem.TVShowTitle)">$INFO[Container(80112).ListItem.Season,S]$INFO[Container(80112).ListItem.Episode,E0] $INFO[Container(80112).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80112).ListItem.Season,9) + Integer.IsGreater(Container(80112).ListItem.Episode,9)] + !String.IsEmpty(Container(80112).ListItem.Episode) + !String.IsEqual(Container(80112).ListItem.Label,Container(80112).ListItem.TVShowTitle)">$INFO[Container(80112).ListItem.Season,S]$INFO[Container(80112).ListItem.Episode,E] $INFO[Container(80112).ListItem.Title]</value>
+		<value>$INFO[Container(80112).ListItem.Label]</value>
+	</variable>
+	<variable name="HomeWidget80113TitleVar">
+		<value condition="!String.IsEmpty(Container(80113).ListItem.AddonName)">$INFO[Container(80113).ListItem.AddonName]</value>
+		<value condition="[!Integer.IsGreater(Container(80113).ListItem.Season,9) + !Integer.IsGreater(Container(80113).ListItem.Episode,9)] + !String.StartsWith(Container(80113).ListItem.Episode,S) + !String.IsEmpty(Container(80113).ListItem.Episode) + !String.IsEqual(Container(80113).ListItem.Label,Container(80113).ListItem.TVShowTitle)">$INFO[Container(80113).ListItem.Season,S0]$INFO[Container(80113).ListItem.Episode,E0] $INFO[Container(80113).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80113).ListItem.Season,9) + !Integer.IsGreater(Container(80113).ListItem.Episode,9)] + String.StartsWith(Container(80113).ListItem.Episode,S) + !String.IsEmpty(Container(80113).ListItem.Episode) + !String.IsEqual(Container(80113).ListItem.Label,Container(80113).ListItem.TVShowTitle)">$INFO[Container(80113).ListItem.Season,S0]$INFO[Container(80113).ListItem.Episode] $INFO[Container(80113).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80113).ListItem.Season,9) + Integer.IsGreater(Container(80113).ListItem.Episode,9)] + !String.IsEmpty(Container(80113).ListItem.Episode) + !String.IsEqual(Container(80113).ListItem.Label,Container(80113).ListItem.TVShowTitle)">$INFO[Container(80113).ListItem.Season,S0]$INFO[Container(80113).ListItem.Episode,E] $INFO[Container(80113).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80113).ListItem.Season,9) + !Integer.IsGreater(Container(80113).ListItem.Episode,9)] + !String.IsEmpty(Container(80113).ListItem.Episode) + !String.IsEqual(Container(80113).ListItem.Label,Container(80113).ListItem.TVShowTitle)">$INFO[Container(80113).ListItem.Season,S]$INFO[Container(80113).ListItem.Episode,E0] $INFO[Container(80113).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80113).ListItem.Season,9) + Integer.IsGreater(Container(80113).ListItem.Episode,9)] + !String.IsEmpty(Container(80113).ListItem.Episode) + !String.IsEqual(Container(80113).ListItem.Label,Container(80113).ListItem.TVShowTitle)">$INFO[Container(80113).ListItem.Season,S]$INFO[Container(80113).ListItem.Episode,E] $INFO[Container(80113).ListItem.Title]</value>
+		<value>$INFO[Container(80113).ListItem.Label]</value>
+	</variable>
+	<variable name="HomeWidget80114TitleVar">
+		<value condition="!String.IsEmpty(Container(80114).ListItem.AddonName)">$INFO[Container(80114).ListItem.AddonName]</value>
+		<value condition="[!Integer.IsGreater(Container(80114).ListItem.Season,9) + !Integer.IsGreater(Container(80114).ListItem.Episode,9)] + !String.StartsWith(Container(80114).ListItem.Episode,S) + !String.IsEmpty(Container(80114).ListItem.Episode) + !String.IsEqual(Container(80114).ListItem.Label,Container(80114).ListItem.TVShowTitle)">$INFO[Container(80114).ListItem.Season,S0]$INFO[Container(80114).ListItem.Episode,E0] $INFO[Container(80114).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80114).ListItem.Season,9) + !Integer.IsGreater(Container(80114).ListItem.Episode,9)] + String.StartsWith(Container(80114).ListItem.Episode,S) + !String.IsEmpty(Container(80114).ListItem.Episode) + !String.IsEqual(Container(80114).ListItem.Label,Container(80114).ListItem.TVShowTitle)">$INFO[Container(80114).ListItem.Season,S0]$INFO[Container(80114).ListItem.Episode] $INFO[Container(80114).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80114).ListItem.Season,9) + Integer.IsGreater(Container(80114).ListItem.Episode,9)] + !String.IsEmpty(Container(80114).ListItem.Episode) + !String.IsEqual(Container(80114).ListItem.Label,Container(80114).ListItem.TVShowTitle)">$INFO[Container(80114).ListItem.Season,S0]$INFO[Container(80114).ListItem.Episode,E] $INFO[Container(80114).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80114).ListItem.Season,9) + !Integer.IsGreater(Container(80114).ListItem.Episode,9)] + !String.IsEmpty(Container(80114).ListItem.Episode) + !String.IsEqual(Container(80114).ListItem.Label,Container(80114).ListItem.TVShowTitle)">$INFO[Container(80114).ListItem.Season,S]$INFO[Container(80114).ListItem.Episode,E0] $INFO[Container(80114).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80114).ListItem.Season,9) + Integer.IsGreater(Container(80114).ListItem.Episode,9)] + !String.IsEmpty(Container(80114).ListItem.Episode) + !String.IsEqual(Container(80114).ListItem.Label,Container(80114).ListItem.TVShowTitle)">$INFO[Container(80114).ListItem.Season,S]$INFO[Container(80114).ListItem.Episode,E] $INFO[Container(80114).ListItem.Title]</value>
+		<value>$INFO[Container(80114).ListItem.Label]</value>
+	</variable>
+	<variable name="HomeWidget80115TitleVar">
+		<value condition="!String.IsEmpty(Container(80115).ListItem.AddonName)">$INFO[Container(80115).ListItem.AddonName]</value>
+		<value condition="[!Integer.IsGreater(Container(80115).ListItem.Season,9) + !Integer.IsGreater(Container(80115).ListItem.Episode,9)] + !String.StartsWith(Container(80115).ListItem.Episode,S) + !String.IsEmpty(Container(80115).ListItem.Episode) + !String.IsEqual(Container(80115).ListItem.Label,Container(80115).ListItem.TVShowTitle)">$INFO[Container(80115).ListItem.Season,S0]$INFO[Container(80115).ListItem.Episode,E0] $INFO[Container(80115).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80115).ListItem.Season,9) + !Integer.IsGreater(Container(80115).ListItem.Episode,9)] + String.StartsWith(Container(80115).ListItem.Episode,S) + !String.IsEmpty(Container(80115).ListItem.Episode) + !String.IsEqual(Container(80115).ListItem.Label,Container(80115).ListItem.TVShowTitle)">$INFO[Container(80115).ListItem.Season,S0]$INFO[Container(80115).ListItem.Episode] $INFO[Container(80115).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80115).ListItem.Season,9) + Integer.IsGreater(Container(80115).ListItem.Episode,9)] + !String.IsEmpty(Container(80115).ListItem.Episode) + !String.IsEqual(Container(80115).ListItem.Label,Container(80115).ListItem.TVShowTitle)">$INFO[Container(80115).ListItem.Season,S0]$INFO[Container(80115).ListItem.Episode,E] $INFO[Container(80115).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80115).ListItem.Season,9) + !Integer.IsGreater(Container(80115).ListItem.Episode,9)] + !String.IsEmpty(Container(80115).ListItem.Episode) + !String.IsEqual(Container(80115).ListItem.Label,Container(80115).ListItem.TVShowTitle)">$INFO[Container(80115).ListItem.Season,S]$INFO[Container(80115).ListItem.Episode,E0] $INFO[Container(80115).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80115).ListItem.Season,9) + Integer.IsGreater(Container(80115).ListItem.Episode,9)] + !String.IsEmpty(Container(80115).ListItem.Episode) + !String.IsEqual(Container(80115).ListItem.Label,Container(80115).ListItem.TVShowTitle)">$INFO[Container(80115).ListItem.Season,S]$INFO[Container(80115).ListItem.Episode,E] $INFO[Container(80115).ListItem.Title]</value>
+		<value>$INFO[Container(80115).ListItem.Label]</value>
+	</variable>
+	<variable name="HomeWidget80116TitleVar">
+		<value condition="!String.IsEmpty(Container(80116).ListItem.AddonName)">$INFO[Container(80116).ListItem.AddonName]</value>
+		<value condition="[!Integer.IsGreater(Container(80116).ListItem.Season,9) + !Integer.IsGreater(Container(80116).ListItem.Episode,9)] + !String.StartsWith(Container(80116).ListItem.Episode,S) + !String.IsEmpty(Container(80116).ListItem.Episode) + !String.IsEqual(Container(80116).ListItem.Label,Container(80116).ListItem.TVShowTitle)">$INFO[Container(80116).ListItem.Season,S0]$INFO[Container(80116).ListItem.Episode,E0] $INFO[Container(80116).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80116).ListItem.Season,9) + !Integer.IsGreater(Container(80116).ListItem.Episode,9)] + String.StartsWith(Container(80116).ListItem.Episode,S) + !String.IsEmpty(Container(80116).ListItem.Episode) + !String.IsEqual(Container(80116).ListItem.Label,Container(80116).ListItem.TVShowTitle)">$INFO[Container(80116).ListItem.Season,S0]$INFO[Container(80116).ListItem.Episode] $INFO[Container(80116).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80116).ListItem.Season,9) + Integer.IsGreater(Container(80116).ListItem.Episode,9)] + !String.IsEmpty(Container(80116).ListItem.Episode) + !String.IsEqual(Container(80116).ListItem.Label,Container(80116).ListItem.TVShowTitle)">$INFO[Container(80116).ListItem.Season,S0]$INFO[Container(80116).ListItem.Episode,E] $INFO[Container(80116).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80116).ListItem.Season,9) + !Integer.IsGreater(Container(80116).ListItem.Episode,9)] + !String.IsEmpty(Container(80116).ListItem.Episode) + !String.IsEqual(Container(80116).ListItem.Label,Container(80116).ListItem.TVShowTitle)">$INFO[Container(80116).ListItem.Season,S]$INFO[Container(80116).ListItem.Episode,E0] $INFO[Container(80116).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80116).ListItem.Season,9) + Integer.IsGreater(Container(80116).ListItem.Episode,9)] + !String.IsEmpty(Container(80116).ListItem.Episode) + !String.IsEqual(Container(80116).ListItem.Label,Container(80116).ListItem.TVShowTitle)">$INFO[Container(80116).ListItem.Season,S]$INFO[Container(80116).ListItem.Episode,E] $INFO[Container(80116).ListItem.Title]</value>
+		<value>$INFO[Container(80116).ListItem.Label]</value>
+	</variable>
+	<variable name="HomeWidget80216TitleVar">
+		<value condition="!String.IsEmpty(Container(80216).ListItem.AddonName)">$INFO[Container(80216).ListItem.AddonName]</value>
+		<value condition="[!Integer.IsGreater(Container(80216).ListItem.Season,9) + !Integer.IsGreater(Container(80216).ListItem.Episode,9)] + !String.StartsWith(Container(80216).ListItem.Episode,S) + !String.IsEmpty(Container(80216).ListItem.Episode) + !String.IsEqual(Container(80216).ListItem.Label,Container(80216).ListItem.TVShowTitle)">$INFO[Container(80216).ListItem.Season,S0]$INFO[Container(80216).ListItem.Episode,E0] $INFO[Container(80216).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80216).ListItem.Season,9) + !Integer.IsGreater(Container(80216).ListItem.Episode,9)] + String.StartsWith(Container(80216).ListItem.Episode,S) + !String.IsEmpty(Container(80216).ListItem.Episode) + !String.IsEqual(Container(80216).ListItem.Label,Container(80216).ListItem.TVShowTitle)">$INFO[Container(80216).ListItem.Season,S0]$INFO[Container(80216).ListItem.Episode] $INFO[Container(80216).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80216).ListItem.Season,9) + Integer.IsGreater(Container(80216).ListItem.Episode,9)] + !String.IsEmpty(Container(80216).ListItem.Episode) + !String.IsEqual(Container(80216).ListItem.Label,Container(80216).ListItem.TVShowTitle)">$INFO[Container(80216).ListItem.Season,S0]$INFO[Container(80216).ListItem.Episode,E] $INFO[Container(80216).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80216).ListItem.Season,9) + !Integer.IsGreater(Container(80216).ListItem.Episode,9)] + !String.IsEmpty(Container(80216).ListItem.Episode) + !String.IsEqual(Container(80216).ListItem.Label,Container(80216).ListItem.TVShowTitle)">$INFO[Container(80216).ListItem.Season,S]$INFO[Container(80216).ListItem.Episode,E0] $INFO[Container(80216).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80216).ListItem.Season,9) + Integer.IsGreater(Container(80216).ListItem.Episode,9)] + !String.IsEmpty(Container(80216).ListItem.Episode) + !String.IsEqual(Container(80216).ListItem.Label,Container(80216).ListItem.TVShowTitle)">$INFO[Container(80216).ListItem.Season,S]$INFO[Container(80216).ListItem.Episode,E] $INFO[Container(80216).ListItem.Title]</value>
+		<value>$INFO[Container(80216).ListItem.Label]</value>
+	</variable>
+	<variable name="HomeWidget80117TitleVar">
+		<value condition="!String.IsEmpty(Container(80117).ListItem.AddonName)">$INFO[Container(80117).ListItem.AddonName]</value>
+		<value condition="[!Integer.IsGreater(Container(80117).ListItem.Season,9) + !Integer.IsGreater(Container(80117).ListItem.Episode,9)] + !String.StartsWith(Container(80117).ListItem.Episode,S) + !String.IsEmpty(Container(80117).ListItem.Episode) + !String.IsEqual(Container(80117).ListItem.Label,Container(80117).ListItem.TVShowTitle)">$INFO[Container(80117).ListItem.Season,S0]$INFO[Container(80117).ListItem.Episode,E0] $INFO[Container(80117).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80117).ListItem.Season,9) + !Integer.IsGreater(Container(80117).ListItem.Episode,9)] + String.StartsWith(Container(80117).ListItem.Episode,S) + !String.IsEmpty(Container(80117).ListItem.Episode) + !String.IsEqual(Container(80117).ListItem.Label,Container(80117).ListItem.TVShowTitle)">$INFO[Container(80117).ListItem.Season,S0]$INFO[Container(80117).ListItem.Episode] $INFO[Container(80117).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80117).ListItem.Season,9) + Integer.IsGreater(Container(80117).ListItem.Episode,9)] + !String.IsEmpty(Container(80117).ListItem.Episode) + !String.IsEqual(Container(80117).ListItem.Label,Container(80117).ListItem.TVShowTitle)">$INFO[Container(80117).ListItem.Season,S0]$INFO[Container(80117).ListItem.Episode,E] $INFO[Container(80117).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80117).ListItem.Season,9) + !Integer.IsGreater(Container(80117).ListItem.Episode,9)] + !String.IsEmpty(Container(80117).ListItem.Episode) + !String.IsEqual(Container(80117).ListItem.Label,Container(80117).ListItem.TVShowTitle)">$INFO[Container(80117).ListItem.Season,S]$INFO[Container(80117).ListItem.Episode,E0] $INFO[Container(80117).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80117).ListItem.Season,9) + Integer.IsGreater(Container(80117).ListItem.Episode,9)] + !String.IsEmpty(Container(80117).ListItem.Episode) + !String.IsEqual(Container(80117).ListItem.Label,Container(80117).ListItem.TVShowTitle)">$INFO[Container(80117).ListItem.Season,S]$INFO[Container(80117).ListItem.Episode,E] $INFO[Container(80117).ListItem.Title]</value>
+		<value>$INFO[Container(80117).ListItem.Label]</value>
+	</variable>
+	<variable name="HomeWidget80217TitleVar">
+		<value condition="!String.IsEmpty(Container(80217).ListItem.AddonName)">$INFO[Container(80217).ListItem.AddonName]</value>
+		<value condition="[!Integer.IsGreater(Container(80217).ListItem.Season,9) + !Integer.IsGreater(Container(80217).ListItem.Episode,9)] + !String.StartsWith(Container(80217).ListItem.Episode,S) + !String.IsEmpty(Container(80217).ListItem.Episode) + !String.IsEqual(Container(80217).ListItem.Label,Container(80217).ListItem.TVShowTitle)">$INFO[Container(80217).ListItem.Season,S0]$INFO[Container(80217).ListItem.Episode,E0] $INFO[Container(80217).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80217).ListItem.Season,9) + !Integer.IsGreater(Container(80217).ListItem.Episode,9)] + String.StartsWith(Container(80217).ListItem.Episode,S) + !String.IsEmpty(Container(80217).ListItem.Episode) + !String.IsEqual(Container(80217).ListItem.Label,Container(80217).ListItem.TVShowTitle)">$INFO[Container(80217).ListItem.Season,S0]$INFO[Container(80217).ListItem.Episode] $INFO[Container(80217).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80217).ListItem.Season,9) + Integer.IsGreater(Container(80217).ListItem.Episode,9)] + !String.IsEmpty(Container(80217).ListItem.Episode) + !String.IsEqual(Container(80217).ListItem.Label,Container(80217).ListItem.TVShowTitle)">$INFO[Container(80217).ListItem.Season,S0]$INFO[Container(80217).ListItem.Episode,E] $INFO[Container(80217).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80217).ListItem.Season,9) + !Integer.IsGreater(Container(80217).ListItem.Episode,9)] + !String.IsEmpty(Container(80217).ListItem.Episode) + !String.IsEqual(Container(80217).ListItem.Label,Container(80217).ListItem.TVShowTitle)">$INFO[Container(80217).ListItem.Season,S]$INFO[Container(80217).ListItem.Episode,E0] $INFO[Container(80217).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80217).ListItem.Season,9) + Integer.IsGreater(Container(80217).ListItem.Episode,9)] + !String.IsEmpty(Container(80217).ListItem.Episode) + !String.IsEqual(Container(80217).ListItem.Label,Container(80217).ListItem.TVShowTitle)">$INFO[Container(80217).ListItem.Season,S]$INFO[Container(80217).ListItem.Episode,E] $INFO[Container(80217).ListItem.Title]</value>
+		<value>$INFO[Container(80217).ListItem.Label]</value>
+	</variable>
+	<variable name="HomeWidget80118TitleVar">
+		<value condition="!String.IsEmpty(Container(80118).ListItem.AddonName)">$INFO[Container(80118).ListItem.AddonName]</value>
+		<value condition="[!Integer.IsGreater(Container(80118).ListItem.Season,9) + !Integer.IsGreater(Container(80118).ListItem.Episode,9)] + !String.StartsWith(Container(80118).ListItem.Episode,S) + !String.IsEmpty(Container(80118).ListItem.Episode) + !String.IsEqual(Container(80118).ListItem.Label,Container(80118).ListItem.TVShowTitle)">$INFO[Container(80118).ListItem.Season,S0]$INFO[Container(80118).ListItem.Episode,E0] $INFO[Container(80118).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80118).ListItem.Season,9) + !Integer.IsGreater(Container(80118).ListItem.Episode,9)] + String.StartsWith(Container(80118).ListItem.Episode,S) + !String.IsEmpty(Container(80118).ListItem.Episode) + !String.IsEqual(Container(80118).ListItem.Label,Container(80118).ListItem.TVShowTitle)">$INFO[Container(80118).ListItem.Season,S0]$INFO[Container(80118).ListItem.Episode] $INFO[Container(80118).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80118).ListItem.Season,9) + Integer.IsGreater(Container(80118).ListItem.Episode,9)] + !String.IsEmpty(Container(80118).ListItem.Episode) + !String.IsEqual(Container(80118).ListItem.Label,Container(80118).ListItem.TVShowTitle)">$INFO[Container(80118).ListItem.Season,S0]$INFO[Container(80118).ListItem.Episode,E] $INFO[Container(80118).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80118).ListItem.Season,9) + !Integer.IsGreater(Container(80118).ListItem.Episode,9)] + !String.IsEmpty(Container(80118).ListItem.Episode) + !String.IsEqual(Container(80118).ListItem.Label,Container(80118).ListItem.TVShowTitle)">$INFO[Container(80118).ListItem.Season,S]$INFO[Container(80118).ListItem.Episode,E0] $INFO[Container(80118).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80118).ListItem.Season,9) + Integer.IsGreater(Container(80118).ListItem.Episode,9)] + !String.IsEmpty(Container(80118).ListItem.Episode) + !String.IsEqual(Container(80118).ListItem.Label,Container(80118).ListItem.TVShowTitle)">$INFO[Container(80118).ListItem.Season,S]$INFO[Container(80118).ListItem.Episode,E] $INFO[Container(80118).ListItem.Title]</value>
+		<value>$INFO[Container(80118).ListItem.Label]</value>
+	</variable>
+	<variable name="HomeWidget80119TitleVar">
+		<value condition="!String.IsEmpty(Container(80119).ListItem.AddonName)">$INFO[Container(80119).ListItem.AddonName]</value>
+		<value condition="[!Integer.IsGreater(Container(80119).ListItem.Season,9) + !Integer.IsGreater(Container(80119).ListItem.Episode,9)] + !String.StartsWith(Container(80119).ListItem.Episode,S) + !String.IsEmpty(Container(80119).ListItem.Episode) + !String.IsEqual(Container(80119).ListItem.Label,Container(80119).ListItem.TVShowTitle)">$INFO[Container(80119).ListItem.Season,S0]$INFO[Container(80119).ListItem.Episode,E0] $INFO[Container(80119).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80119).ListItem.Season,9) + !Integer.IsGreater(Container(80119).ListItem.Episode,9)] + String.StartsWith(Container(80119).ListItem.Episode,S) + !String.IsEmpty(Container(80119).ListItem.Episode) + !String.IsEqual(Container(80119).ListItem.Label,Container(80119).ListItem.TVShowTitle)">$INFO[Container(80119).ListItem.Season,S0]$INFO[Container(80119).ListItem.Episode] $INFO[Container(80119).ListItem.Title]</value>
+		<value condition="[!Integer.IsGreater(Container(80119).ListItem.Season,9) + Integer.IsGreater(Container(80119).ListItem.Episode,9)] + !String.IsEmpty(Container(80119).ListItem.Episode) + !String.IsEqual(Container(80119).ListItem.Label,Container(80119).ListItem.TVShowTitle)">$INFO[Container(80119).ListItem.Season,S0]$INFO[Container(80119).ListItem.Episode,E] $INFO[Container(80119).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80119).ListItem.Season,9) + !Integer.IsGreater(Container(80119).ListItem.Episode,9)] + !String.IsEmpty(Container(80119).ListItem.Episode) + !String.IsEqual(Container(80119).ListItem.Label,Container(80119).ListItem.TVShowTitle)">$INFO[Container(80119).ListItem.Season,S]$INFO[Container(80119).ListItem.Episode,E0] $INFO[Container(80119).ListItem.Title]</value>
+		<value condition="[Integer.IsGreater(Container(80119).ListItem.Season,9) + Integer.IsGreater(Container(80119).ListItem.Episode,9)] + !String.IsEmpty(Container(80119).ListItem.Episode) + !String.IsEqual(Container(80119).ListItem.Label,Container(80119).ListItem.TVShowTitle)">$INFO[Container(80119).ListItem.Season,S]$INFO[Container(80119).ListItem.Episode,E] $INFO[Container(80119).ListItem.Title]</value>
+		<value>$INFO[Container(80119).ListItem.Label]</value>
+	</variable>
+	<include name="skinshortcuts-template-WidgetFanArt">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetFanArt.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetLandscape">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetLandscape.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetClearArt">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetClearArt.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetClearLogo">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetClearLogo.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetThumb">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetThumb.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetCharacterArt">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetCharacterArt.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetBanner">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetBanner.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetCase">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetCase.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetPoster">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetPoster.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetSubTitle">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetSubTitle.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetInfo1">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetInfo1.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetInfo2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetInfo2.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetPlot">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+	<include name="skinshortcuts-template-WidgetPlot.2">
+		<description>This include was built automatically as the template didn't match any menu items</description>
+	</include>
+</includes>
