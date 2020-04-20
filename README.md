@@ -1,4 +1,4 @@
-# Aeon Nox 5: SiLVO
+# Kall-Ice
 A modded version of [Aeon Nox 5](http://forum.kodi.tv/showthread.php?tid=183504)
 
 **Branches guide:**
@@ -8,6 +8,6 @@ A modded version of [Aeon Nox 5](http://forum.kodi.tv/showthread.php?tid=183504)
  - **isengard:** Kodi v15 Codename Isengard
  - **helix:** Kodi v14 Codename Helix
 
-*Check the [Aeon Nox 5: SiLVO thread](http://forum.kodi.tv/showthread.php?tid=210069) for more information and support*
+*Check the [Kall-Ice thread](http://forum.kodi.tv/showthread.php?tid=210069) for more information and support*
 
 **ALL OTHER BRANCHES SHOULD NOT BE USED OR INSTALLED**
